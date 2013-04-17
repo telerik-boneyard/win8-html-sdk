@@ -1,0 +1,22 @@
+﻿.mainContent {
+	margin: 120px;
+}
+
+.info {
+	color: #feef7a;
+	margin: 0 120px;
+}
+
+/*centering the tile*/
+.gridLayoutSingleCell {
+	display: -ms-grid;
+	-ms-grid-columns: 1fr;
+	-ms-grid-rows: 1fr;
+}
+
+.gridLayoutSingleCell > div {
+	-ms-grid-column: 1;
+	-ms-grid-row: 1;
+	-ms-grid-column-align: center;
+	-ms-grid-row-align: center;
+}

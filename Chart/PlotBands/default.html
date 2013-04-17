@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>PlotBands</title>
+
+	<!-- WinJS references -->
+	<link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+	<script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+	<script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+	<!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+	<!-- PlotBands references -->
+	<link href="/css/default.css" rel="stylesheet" />
+	<script src="/js/default.js"></script>
+</head>
+<body>
+	<section class="mainContent">
+		<div id="chart" data-win-control="Telerik.UI.RadChart" data-win-options="{
+			series: [
+				{
+					type: 'line',
+					name: 'Wind speed',
+					data: [1, 4, 2, 15, 10, 7]
+				}
+			],
+			categoryAxis: {
+				categories: ['Mon', 'Tue', 'Wen', 'Thu', 'Fri', 'Sat']
+			},
+			valueAxis: {
+				plotBands: [
+					{
+						from: 0,
+						to: 5,
+						color: 'rgba(144, 238, 144, 0.4)'
+					},
+					{
+						from: 5,
+						to: 10,
+						color: 'rgba(255, 255, 0, 0.4)'
+					},
+					{
+						from: 10,
+						to: 100,
+						color: 'rgba(255, 165, 0, 0.4)'
+					}
+				]
+			},
+			tooltip: {
+				visible: true,
+				template: '#=value# m/s'
+			}
+		}">
+		</div>
+	</section>
+	<div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>

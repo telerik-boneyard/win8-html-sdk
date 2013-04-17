@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>FinancialCharts</title>
+
+	<!-- WinJS references -->
+	<link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+	<script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+	<script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+	<!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+	<!-- FinancialCharts references -->
+	<link href="/css/default.css" rel="stylesheet" />
+	<script src="/js/default.js"></script>
+	<script src="js/defaultData.js"></script>
+</head>
+<body>
+	<section class="mainContent">
+		<p>Pick a chart type to display:</p>
+		<ul class="options">
+			<li>
+				<input type="radio" name="radial" value="candlestickChart" id="candlestickBtn" /><label for="candlestickBtn">Candlestick Series</label></li>
+			<li>
+				<input type="radio" name="radial" value="ohlcChart" id="ohlcBtn" /><label for="ohlcBtn">Ohlc Series</label></li>
+		</ul>
+		<div id="charts">
+			<div id="candlestickChart" data-win-control="Telerik.UI.RadChart" data-win-options="{
+					dataSource: {
+						data: DefaultData.chartData
+					},
+					series: [
+						{
+							type: 'candlestick',
+							openField: 'Open',
+							highField: 'High',
+							lowField: 'Low',
+							closeField: 'Close'
+						}
+					],
+					categoryAxis: {
+						field: 'Date',
+					}
+				}">
+			</div>
+			<div id="ohlcChart" data-win-control="Telerik.UI.RadChart" data-win-options="{
+					dataSource: {
+						data: DefaultData.chartData
+					},
+					series: [
+						{
+							type: 'ohlc',
+							openField: 'Open',
+							highField: 'High',
+							lowField: 'Low',
+							closeField: 'Close'
+						}
+					],
+					categoryAxis: {
+						field: 'Date',
+					}
+				}">
+			</div>
+		</div>
+	</section>
+	<div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>

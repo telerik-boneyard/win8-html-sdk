@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>CategoricalCharts</title>
+
+	<!-- WinJS references -->
+	<link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+	<script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+	<script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+	<!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+	<!-- CategoricalCharts references -->
+	<link href="/css/default.css" rel="stylesheet" />
+	<script src="/js/default.js"></script>
+	<script src="js/defaultData.js"></script>
+</head>
+<body>
+	<section class="mainContent">
+		<ul class="options">
+			<li>
+				<input type="radio" name="category" value="columnChart" id="columnBtn" /><label for="columnBtn">Column Series</label></li>
+			<li>
+				<input type="radio" name="category" value="barChart" id="barBtn" /><label for="barBtn">Bar Series</label></li>
+			<li>
+				<input type="radio" name="category" value="areaChart" id="areaBtn" /><label for="areaBtn">Area Series</label></li>
+			<li>
+				<input type="radio" name="category" value="verticalAreaChart" id="vAreaBtn" /><label for="vAreaBtn">Vertical Area Series</label></li>
+			<li>
+				<input type="radio" name="category" value="lineChart" id="lineBtn" /><label for="lineBtn">Line Series</label></li>
+			<li>
+				<input type="radio" name="category" value="verticalLineChart" id="vLineBtn" /><label for="vLineBtn">Vertical Line Series</label></li>
+		</ul>
+		<div id="charts">
+			<div id="columnChart" data-win-control="Telerik.UI.RadChart" data-win-options="{
+					dataSource: {
+						data: DefaultData.salesData
+					},
+					series: [{ 
+							type: 'column', 
+							name: 'World',
+							field: 'Value'
+						}
+					],
+					categoryAxis: {
+						field: 'Date',
+						labels: {
+							rotation: 45
+						}
+					}
+				}">
+			</div>
+			<div id="barChart" data-win-control="Telerik.UI.RadChart" data-win-options="{
+					dataSource: {
+						data: DefaultData.salesData
+					},
+					series: [{ 
+							type: 'bar', 
+							name: 'World',
+							field: 'Value'
+						}
+					],
+					categoryAxis: {
+						field: 'Date'
+					}
+				}">
+			</div>
+			<div id="areaChart" data-win-control="Telerik.UI.RadChart" data-win-options="{
+					dataSource: {
+						data: DefaultData.salesData
+					},
+					series: [{ 
+							type: 'area', 
+							name: 'World',
+							field: 'Value'
+						}
+					],
+					categoryAxis: {
+						field: 'Date',
+						labels: {
+							rotation: 45
+						}
+					}
+				}">
+			</div>
+			<div id="verticalAreaChart" data-win-control="Telerik.UI.RadChart" data-win-options="{
+					dataSource: {
+						data: DefaultData.salesData
+					},
+					series: [{ 
+							type: 'verticalArea', 
+							name: 'World',
+							field: 'Value'
+						}
+					],
+					categoryAxis: {
+						field: 'Date'
+					}
+
+				}">
+			</div>
+			<div id="lineChart" data-win-control="Telerik.UI.RadChart" data-win-options="{
+					dataSource: {
+						data: DefaultData.salesData
+					},
+					series: [{ 
+							type: 'line', 
+							name: 'World',
+							field: 'Value'
+						}
+					],
+					categoryAxis: {
+						field: 'Date',
+						labels: {
+							rotation: 45
+						}
+					}
+
+				}">
+			</div>
+			<div id="verticalLineChart" data-win-control="Telerik.UI.RadChart" data-win-options="{
+					dataSource: {
+						data: DefaultData.salesData
+					},
+					series: [{ 
+							type: 'verticalLine', 
+							name: 'World',
+							field: 'Value'
+						}
+					],
+					categoryAxis: {
+						field: 'Date'
+					}
+
+				}">
+			</div>
+		</div>
+	</section>
+	<div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>

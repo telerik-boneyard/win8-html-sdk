@@ -1,0 +1,39 @@
+﻿.mainContent {
+	margin: 120px;
+}
+
+#charts > div {
+	display: none;
+}
+
+.options {
+	list-style: none;
+	float: left;
+}
+
+.options li {
+	margin: 5px;
+	font-size: 20px;
+	line-height: 45px;
+}
+
+#charts {
+	float: right;
+}
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+}
+
+.mainContent:before,
+.mainContent:after {
+	content: ".";
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+
+.mainContent:after {
+	clear: both;
+}

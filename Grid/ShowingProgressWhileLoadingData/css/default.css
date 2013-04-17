@@ -1,0 +1,28 @@
+﻿.mainContent {
+	margin: 120px;
+	width: 1000px;
+}
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+	width: 1000px;
+}
+
+/*progress styles*/
+.progressHolder {
+	position: absolute;
+	width: 1000px;
+	height: calc(100% - 36px - 300px);
+	left: 120px;
+	top: 0;
+	display: -ms-flexbox;
+}
+
+.progressHolder progress {
+	margin: auto;
+}
+
+.hidden {
+	display: none;
+}
