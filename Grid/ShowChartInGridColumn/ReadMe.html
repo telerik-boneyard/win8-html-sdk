@@ -1,0 +1,7 @@
+﻿<p>This example shows how to display controls inside a RadGrid column. In this scenario, a RadChart is displayed in the second column.</p>
+<p>
+	The scenario is achieved by using cell template for the column, where a template function is called. The data item of the current row is passed to it
+and the chart options are build in accordance with the available data. Afterwards, the options are stringified and returned inside an HTML wrapper
+definition. In the <strong>databound</strong> event of RadGrid, <strong>processAll()</strong> is called for its element, so the nested controls can be
+instantiated.
+</p>

@@ -1,0 +1,27 @@
+﻿.mainContent {
+	margin: 120px;
+	height: 500px;
+	display: -ms-grid;
+	-ms-grid-columns: 1fr 2fr;
+}
+
+.options {
+	list-style: none;
+	-ms-grid-column: 1;
+}
+
+.options li {
+	margin: 5px;
+	font-size: 20px;
+	line-height: 45px;
+}
+
+#grid {
+	margin-top: 50px;
+	-ms-grid-column: 2;
+}
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+}

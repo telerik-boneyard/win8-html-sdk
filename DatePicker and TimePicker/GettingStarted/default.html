@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>GettingStarted</title>
+
+	<!-- WinJS references -->
+	<link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+	<script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+	<script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+	<!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+	<!-- GettingStarted references -->
+	<link href="/css/default.css" rel="stylesheet" />
+	<script src="/js/default.js"></script>
+</head>
+<body>
+	<section class="mainContent">
+			<p>Choose a picker type to display:</p>
+		<ul class="options">
+			<li>
+				<input type="radio" name="picker" value="picker1" id="dateBtn" /><label for="dateBtn">Date Picker</label></li>
+			<li>
+				<input type="radio" name="picker" value="picker2" id="timeBtn" /><label for="timeBtn">Time Picker</label></li>
+		</ul>
+		<div id="pickers">
+			<div id="picker1" data-win-control="Telerik.UI.RadDatePicker" data-win-options="{
+				emptyContent: 'Pick a date for your trip...'
+			}"></div>
+			<div id="picker2" data-win-control="Telerik.UI.RadTimePicker" data-win-options="{
+				emptyContent: 'Pick a time for your flight...'
+			}">
+			</div>
+		</div>
+	</section>
+	<div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>XyCharts</title>
+
+	<!-- WinJS references -->
+	<link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+	<script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+	<script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+	<!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+	<!-- XyCharts references -->
+	<link href="/css/default.css" rel="stylesheet" />
+	<script src="/js/default.js"></script>
+	<script src="js/defaultData.js"></script>
+</head>
+<body>
+	<section class="mainContent">
+		<ul class="options">
+			<li>
+				<input type="radio" name="xy" value="scatterChart" id="scatterBtn" /><label for="scatterBtn">Scatter Series</label></li>
+			<li>
+				<input type="radio" name="xy" value="scatterLineChart" id="scatterLineBtn" /><label for="scatterLineBtn">Scatter Line Series</label></li>
+			<li>
+				<input type="radio" name="xy" value="bubbleChart" id="bubbleBtn" /><label for="bubbleBtn">Bubble Series</label></li>
+		</ul>
+		<div id="charts">
+			<div>
+				<div id="scatterChart" data-win-control="Telerik.UI.RadChart" data-win-options="{
+					dataSource: {
+						data: DefaultData.chartData
+					},
+					series: [{ 
+							type: 'scatter',
+							name: 'Sales',	
+							xField: 'UnitsSold',
+							yField: 'Year'
+						}
+					],
+					tooltip: {
+						visible: true
+					},
+					title: {
+						text: 'Sales for the period 2005-2012'
+					}
+				}">
+				</div>
+			</div>
+			<div>
+				<div id="scatterLineChart" data-win-control="Telerik.UI.RadChart" data-win-options="{
+					dataSource: {
+						data: DefaultData.chartData
+					},
+					series: [{ 
+							type: 'scatterLine',
+							name: 'Sales',	
+							xField: 'UnitsSold',
+							yField: 'Year'
+						}
+					],
+					tooltip: {
+						visible: true
+					},
+					title: {
+						text: 'Sales for the period 2005-2012'
+					}
+				}">
+				</div>
+			</div>
+			<div>
+				<div id="bubbleChart" data-win-control="Telerik.UI.RadChart" data-win-options="{
+					dataSource: {
+						data: DefaultData.chartData
+					},
+					series: [{ 
+							type: 'bubble',	
+							name: 'Sales',
+							xField: 'UnitsSold',
+							yField: 'Year',
+							sizeField: 'UnitPrice',
+							categoryField: 'Name'
+						}
+					],
+					tooltip: {
+						visible: true
+					},
+					title: {
+						text: 'Sales and prices for the period 2005-2012'
+					}
+				}">
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+			uri: 'readme.html'
+		}">
+	</div>
+</body>
+</html>

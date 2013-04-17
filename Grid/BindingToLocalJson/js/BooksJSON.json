@@ -1,0 +1,69 @@
+﻿{
+  "books": {
+    "book": [
+      {
+        "title": "Eloquent JavaScript",
+		"info": {
+        "author": "Marijn Haverbeke",
+        "url": "http://www.amazon.com/Eloquent-JavaScript-Modern-Introduction-Programming/dp/1593272820"
+		}
+      },
+      {
+        "title": "JavaScript: The Good Parts",
+		"info": {
+        "author": "Douglas Crockford",
+        "url": "http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742"
+      }
+	  },
+      {
+        "title": "Secrets of the JavaScript Ninja",
+		"info": {
+        "author": "John Resig",
+        "url": "http://www.amazon.com/Secrets-JavaScript-Ninja-John-Resig/dp/193398869X"
+		}
+      },
+      {
+        "title": "JavaScript Patterns",
+		"info": {
+        "author": "Stoyan Stefanov",
+        "url": "http://www.amazon.com/JavaScript-Patterns-Stoyan-Stefanov/dp/0596806752"
+		}
+      },
+      {
+        "title": "High Performance JavaScript",
+		"info": {
+        "author": "Nicholas C. Zakas",
+        "url": "http://www.amazon.com/Performance-JavaScript-Faster-Application-Interfaces/dp/059680279X"
+		}
+      },
+      {
+        "title": "Stunning CSS3",
+		"info": {
+        "author": "Zoe Mickley Gillenwater",
+        "url": "http://www.amazon.com/Stunning-CSS3-project-based-latest-Voices/dp/0321722132"
+		}
+      },
+      {
+        "title": "Responsive Web Design",
+		"info": {
+        "author": "Ethan Marcotte",
+        "url": "http://www.abookapart.com/products/responsive-web-design"
+		}
+      },
+      {
+        "title": "Bulletproof Web Design",
+		"info": {
+        "author": "Dan Cederholm",
+        "url": "http://www.amazon.com/Bulletproof-Web-Design-flexibility-protecting/dp/0321509021"
+		}
+      },
+      {
+        "title": "Handcrafted CSS",
+		"info": {
+        "author": "Dan Cederholm and Ethan Marcotte",
+        "url": "http://www.amazon.com/Handcrafted-CSS-More-Bulletproof-Design/dp/0321643380"
+		}
+      }
+    ]
+  }
+}

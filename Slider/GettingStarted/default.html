@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>GettingStarted</title>
+
+	<!-- WinJS references -->
+	<link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+	<script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+	<script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+	<!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+	<!-- GettingStarted references -->
+	<link href="/css/default.css" rel="stylesheet" />
+	<script src="/js/default.js"></script>
+</head>
+<body>
+	<section class="mainContent">
+		<ul class="options">
+			<li>
+				<input type="radio" name="slider" value="slider1" id="sliderBtn" /><label for="sliderBtn">Slider</label></li>
+			<li>
+				<input type="radio" name="slider" value="slider2" id="rangeSliderBtn" /><label for="rangeSliderBtn">Range Slider</label></li>
+		</ul>
+		<div id="sliders">
+			<div id="slider1" data-win-control="Telerik.UI.RadSlider" data-win-options="{
+				min: 0,
+				max: 100,
+				smallStep: 5,
+				largeStep: 10,
+				value: 25
+			}">
+			</div>
+			<div id="slider2" data-win-control="Telerik.UI.RadRangeSlider" data-win-options="{
+				min: 0,
+				max: 100,
+				smallStep: 5,
+				largeStep: 10,
+				selectionStart: 25,
+				selectionEnd: 65
+			}">
+			</div>
+		</div>
+	</section>
+	<div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>

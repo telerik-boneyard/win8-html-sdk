@@ -1,0 +1,16 @@
+﻿.mainContent {
+	margin: 120px;
+	width: 1000px;
+	height: 450px;
+}
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+	width: 1000px;
+}
+
+/*always show virtual scrollbar*/
+.k-scrollbar.k-scrollbar-vertical {
+	-ms-overflow-style: scrollbar;
+}

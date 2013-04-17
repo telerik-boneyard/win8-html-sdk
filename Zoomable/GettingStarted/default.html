@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>GettingStarted</title>
+
+	<!-- WinJS references -->
+	<link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+	<script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+	<script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+	<!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+	<!-- GettingStarted references -->
+	<link href="/css/default.css" rel="stylesheet" />
+	<script src="/js/default.js"></script>
+</head>
+<body>
+	<section class="mainContent">
+		<div id="semanticZoom" style="width: 500px;" data-win-control="WinJS.UI.SemanticZoom" data-win-options="{enableButton: false}">
+			<div id="zoom1" class="gridLayoutSingleCell" data-win-control="Telerik.UI.RadZoomable">
+				<div id="hubTile" data-win-control="Telerik.UI.RadCustomHubTile" data-win-options="{
+                    frontContentTemplate: select('#template')
+                }">
+				</div>
+			</div>
+			<div id="zoom2" class="gridLayoutSingleCell" data-win-control="Telerik.UI.RadZoomable">
+				<div id="chart" data-win-control="Telerik.UI.RadChart" data-win-options="{
+                    series: [
+                        {
+                            data: [21, 20.5, 19.79, 20, 19.99, 19.59],
+                            name: 'Price',
+                            labels: {
+                                visible: true,
+                                template: '$#=value#'
+                            }
+                        }
+                    ],
+                    categoryAxis: {
+                        categories: ['January', 'February', 'March', 'April', 'May', 'June']
+                    },
+                    width: 400,
+                    height: 300
+                }">
+				</div>
+			</div>
+		</div>
+		<div id="template" style="display: none;">
+			<div style="font-size: 13pt; width: 75%; color: white; margin: 40px auto;">
+				<p>Price this month: 19.59$</p>
+			</div>
+		</div>
+	</section>
+	<div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>

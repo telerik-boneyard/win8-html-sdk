@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Resizing and Reordering</title>
+
+	<!-- WinJS references -->
+	<link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+	<script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+	<script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+	<!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+	<!-- ResizingAndReordering references -->
+	<link href="/css/default.css" rel="stylesheet" />
+	<script src="/js/default.js"></script>
+</head>
+<body>
+	<section class="mainContent">
+		<div id="grid1" data-win-control="Telerik.UI.RadGrid" data-win-options="{
+			dataSource: {
+				data: [
+					{ 
+						FirstName: 'Nancy', 
+						LastName:'Davolio', 
+						Title:'Sales Representative', 
+						Notes:'Education includes a BA in psychology from Colorado State University in 1970.'
+					},
+					{ 
+						FirstName:'Andrew', 
+						LastName:'Fuller', 
+						Title:'Vice President, Sales', 
+						Notes:'Andrew received his BTS commercial in 1974 and a Ph.D. in international marketing from the University of Dallas in 1981.'  
+					},
+					{ 
+						FirstName:'Margaret', 
+						LastName:'Peacock', 
+						Title:'Sales Representative', 
+						Notes:'Margaret holds a BA in English literature from Concordia College.'  
+					}
+				]
+			},
+			resizable: true,
+			reorderable: true
+		}">
+		</div>
+	</section>
+	<div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>

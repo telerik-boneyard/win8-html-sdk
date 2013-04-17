@@ -1,0 +1,9 @@
+﻿<p>
+	This sample shows a drill down chart. At first it displays summarized data on year basis, but if you click one of the data points (columns), the
+	chart will display 12-month break-down of the data.
+</p>
+<p>
+	The scenario is achieved by handling the <strong>seriesclick</strong> event of the chart and modifying the series data (by filtering the chart
+	data source, using the year from the clicked data point) and the category axis' base unit (from 'years' to 'months'). You can drill deeper
+	 by changing the base unit to 'days' and filtering the data, based on the current month.
+</p>
