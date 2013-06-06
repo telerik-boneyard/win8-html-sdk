@@ -47,8 +47,6 @@ Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "ShowChartInGridColumn", "Sh
 EndProject
 Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "MasterDetailGrid", "MasterDetailGrid\MasterDetailGrid.jsproj", "{356BB6E8-CC65-4F58-BB39-46514A2BC958}"
 EndProject
-Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "ShowingProgressWhileLoadingData", "ShowingProgressWhileLoadingData\ShowingProgressWhileLoadingData.jsproj", "{E6757A06-1293-4B63-8861-2D1284FEA66F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -613,30 +611,6 @@ Global
 		{356BB6E8-CC65-4F58-BB39-46514A2BC958}.Release|x86.ActiveCfg = Release|x86
 		{356BB6E8-CC65-4F58-BB39-46514A2BC958}.Release|x86.Build.0 = Release|x86
 		{356BB6E8-CC65-4F58-BB39-46514A2BC958}.Release|x86.Deploy.0 = Release|x86
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Debug|ARM.ActiveCfg = Debug|ARM
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Debug|ARM.Build.0 = Debug|ARM
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Debug|ARM.Deploy.0 = Debug|ARM
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Debug|x64.ActiveCfg = Debug|x64
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Debug|x64.Build.0 = Debug|x64
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Debug|x64.Deploy.0 = Debug|x64
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Debug|x86.ActiveCfg = Debug|x86
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Debug|x86.Build.0 = Debug|x86
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Debug|x86.Deploy.0 = Debug|x86
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Release|ARM.ActiveCfg = Release|ARM
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Release|ARM.Build.0 = Release|ARM
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Release|ARM.Deploy.0 = Release|ARM
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Release|x64.ActiveCfg = Release|x64
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Release|x64.Build.0 = Release|x64
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Release|x64.Deploy.0 = Release|x64
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Release|x86.ActiveCfg = Release|x86
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Release|x86.Build.0 = Release|x86
-		{E6757A06-1293-4B63-8861-2D1284FEA66F}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
