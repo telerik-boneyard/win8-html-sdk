@@ -1,0 +1,15 @@
+﻿.mainContent {
+	margin: 120px;
+	width: 1000px;
+}
+
+.mainContent>button {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+	width: 1000px;
+}

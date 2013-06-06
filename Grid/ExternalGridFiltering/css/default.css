@@ -1,0 +1,27 @@
+﻿.mainContent {
+	margin: 120px;
+	width: 1000px;
+	height: 400px;
+}
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+	width: 1000px;
+}
+
+.filterItem {
+	margin-bottom: 50px;
+}
+
+.filterItem > span {
+	margin-right: 10px;
+}
+
+button {
+	vertical-align: bottom;
+}
+
+#grid1 {
+	width: 860px;
+}

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>DataEditing</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+	
+	<!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+    <!-- DataEditing references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+	<section class="mainContent">
+		<div id="grid" data-win-control="Telerik.UI.RadGrid" data-win-options="{
+        width: 800,
+        dataSource: {
+            data: DataEditing.data,
+            schema: {
+                model: {
+                    id: 'RecID',
+                    fields: {
+                        RecID: {
+                            type: 'number',
+                            editable: false,
+                            nullable: true
+                        },
+                        Name: {
+							type: 'string',
+                            validation: {
+                                required: true
+                            }
+                        },
+                        City: {
+							type: 'string'
+                        },
+                        JobTitle: {
+							type: 'string',
+                            validation: {
+                                required: true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        columns: [
+             {field: 'RecID', title: 'ID', width: 50},
+             {field: 'Name', width: 200},
+             {field: 'City'},
+             {field: 'JobTitle', title: 'Job Title', width: 350}
+        ],
+        editable: {
+            enabled: true,
+            mode: 'row'
+        },
+		onsave: DataEditing.insertId,
+        theme: 'light'
+    }">
+</div>
+	</section>
+	<div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>

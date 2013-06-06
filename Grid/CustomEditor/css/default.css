@@ -1,0 +1,18 @@
+﻿.mainContent {
+	margin: 120px;
+	width: 1000px;
+}
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+	width: 1000px;
+}
+
+div.win-rating .win-full.win-user.win-star {
+	color: rgb(0, 106, 193);
+}
+
+div.win-rating .win-star.win-tentative.win-full {
+	color: rgb(255, 255, 255);
+}
