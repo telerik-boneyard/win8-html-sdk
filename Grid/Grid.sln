@@ -63,6 +63,8 @@ Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "Validation", "Validation\Va
 EndProject
 Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "CustomEditor", "CustomEditor\CustomEditor.jsproj", "{5593B45C-FBC1-46B6-AF4D-BDC4B1BD26F8}"
 EndProject
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "PersistingGridSettings", "PersistingGridSettings\PersistingGridSettings.jsproj", "{76A1B11E-055A-416F-9EC7-DCFDD58172B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -819,6 +821,30 @@ Global
 		{5593B45C-FBC1-46B6-AF4D-BDC4B1BD26F8}.Release|x86.ActiveCfg = Release|x86
 		{5593B45C-FBC1-46B6-AF4D-BDC4B1BD26F8}.Release|x86.Build.0 = Release|x86
 		{5593B45C-FBC1-46B6-AF4D-BDC4B1BD26F8}.Release|x86.Deploy.0 = Release|x86
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Debug|ARM.ActiveCfg = Debug|ARM
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Debug|ARM.Build.0 = Debug|ARM
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Debug|ARM.Deploy.0 = Debug|ARM
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Debug|x64.ActiveCfg = Debug|x64
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Debug|x64.Build.0 = Debug|x64
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Debug|x64.Deploy.0 = Debug|x64
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Debug|x86.ActiveCfg = Debug|x86
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Debug|x86.Build.0 = Debug|x86
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Debug|x86.Deploy.0 = Debug|x86
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Release|ARM.ActiveCfg = Release|ARM
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Release|ARM.Build.0 = Release|ARM
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Release|ARM.Deploy.0 = Release|ARM
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Release|x64.ActiveCfg = Release|x64
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Release|x64.Build.0 = Release|x64
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Release|x64.Deploy.0 = Release|x64
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Release|x86.ActiveCfg = Release|x86
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Release|x86.Build.0 = Release|x86
+		{76A1B11E-055A-416F-9EC7-DCFDD58172B7}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
