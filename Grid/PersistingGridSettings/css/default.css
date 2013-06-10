@@ -1,0 +1,18 @@
+﻿.mainContent {
+	margin: 120px;
+	width: 1000px;
+}
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+	width: 1000px;
+}
+
+#saveSettingsBtn {
+    margin-top: 20px;
+}
+
+#savedMsg {
+    margin-left: 20px;
+}
