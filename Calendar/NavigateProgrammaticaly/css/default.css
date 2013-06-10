@@ -1,0 +1,16 @@
+﻿.mainContent {
+	margin: 120px;
+	width: 1000px;
+}
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+	width: 1000px;
+}
+
+button {
+    display: block;
+    width: 250px;
+    margin-top: 5px;
+}

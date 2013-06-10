@@ -1,0 +1,23 @@
+﻿.mainContent {
+	margin: 120px;
+	width: 1000px;
+}
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+	width: 1000px;
+}
+
+.template {
+    background-color: #605B4F;
+    height: calc(100% + 6px); /*expand the cell content vertically*/
+    width: calc(100% + 6px); /*expand the cell content horizontally*/
+    text-align: left;
+    display: -ms-flexbox;
+    -ms-flex-align: end;
+    margin-left: -3px;
+    margin-bottom: -3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+}
