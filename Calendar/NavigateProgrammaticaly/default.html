@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>NavigateProgrammatically</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+    <!-- NavigateProgrammatically references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <section class="mainContent">
+        <div id="calendar" data-win-control="Telerik.UI.RadCalendar"></div>
+        <div id="picker" data-win-control="Telerik.UI.RadDatePicker"></div>
+        <button id="navigateBtn">navigate(value, view)</button>
+        <button id="navigateDownBtn" disabled="disabled">navigateDown(value)</button>
+        <button id="navigateToFutureBtn">navigateToFuture()</button>
+        <button id="navigateToPastBtn">navigateToPast()</button>
+        <button id="navigateUpBtn">navigateUp()</button>
+    </section>
+    <div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>

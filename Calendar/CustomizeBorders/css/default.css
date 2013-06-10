@@ -1,0 +1,194 @@
+﻿.mainContent {
+	margin: 120px;
+	width: 1000px;
+}
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+	width: 1000px;
+}
+
+.t-calendar {
+    margin: 10px;
+}
+
+/* First Calendar styles - modified all borders */
+.Calendar1.t-calendar,
+.Calendar1 .k-calendar .k-header,
+.Calendar1 .k-calendar .k-content th,
+.Calendar1 .k-calendar .k-footer,
+.Calendar1 .k-content td,
+.Calendar1 .k-calendar .k-content .k-today:before,
+.Calendar1 .k-calendar .k-content .k-state-selected:before,
+.Calendar1 .k-calendar .k-content .k-state-hover:before,
+.Calendar1 .k-calendar .k-content .k-state-focused:before {
+        border-width: 1px;
+}
+
+.Calendar1 .k-calendar .k-content .k-today:before,
+.Calendar1 .k-calendar .k-content .k-state-selected:before,
+.Calendar1 .k-calendar .k-content .k-state-hover:before,
+.Calendar1 .k-calendar .k-content .k-state-focused:before {
+        top: -1px; /* 1px - Same as the border width */
+        left: -1px; /* 1px - Same as the border width */
+}
+
+.Calendar1 .k-calendar .k-content tr:last-child > .k-today:before,
+.Calendar1 .k-calendar .k-content tr:last-child > .k-state-selected:before,
+.Calendar1 .k-calendar .k-content tr:last-child > .k-state-hover:before,
+.Calendar1 .k-calendar .k-content tr:last-child > .k-state-focused:before {
+        height: calc(100% - 1px); /* 1px - Same as the border width */
+}
+
+.Calendar1 .k-calendar .k-content .k-today:first-child:before,
+.Calendar1 .k-calendar .k-content .k-today:last-child:before,
+.Calendar1 .k-calendar .k-content .k-state-selected:first-child:before,
+.Calendar1 .k-calendar .k-content .k-state-selected:last-child:before,
+.Calendar1 .k-calendar .k-content .k-state-hover:first-child:before,
+.Calendar1 .k-calendar .k-content .k-state-hover:last-child:before,
+.Calendar1 .k-calendar .k-content .k-state-focused:first-child:before,
+.Calendar1 .k-calendar .k-content .k-state-focused:last-child:before {
+        width: calc(100% - 1px); /* 1px - Same as the border width */
+}
+
+.Calendar1 .k-calendar .k-content .k-today:first-child:before,
+.Calendar1 .k-calendar .k-content .k-state-selected:first-child:before,
+.Calendar1 .k-calendar .k-content .k-state-hover:first-child:before,
+.Calendar1 .k-calendar .k-content .k-state-focused:first-child:before {
+        left: 0;
+}
+
+.Calendar1.t-calendar,
+.Calendar1 .k-calendar .k-header,
+.Calendar1 .k-calendar .k-content th,
+.Calendar1 .k-calendar .k-footer,
+.Calendar1 .k-calendar .k-content td {
+        border-color: #a081d9;
+}
+
+.Calendar1 .k-calendar .k-content .k-today:before {
+        border-color: #d821c3;
+}
+
+
+
+/* Second Calendar styles - customize state borders */
+.Calendar2 .k-calendar .k-content .k-today:before,
+.Calendar2 .k-calendar .k-content .k-state-selected:before,
+.Calendar2 .k-calendar .k-content .k-state-hover:before,
+.Calendar2 .k-calendar .k-content .k-state-focused:before {
+        border-width: 3px;
+}
+
+.Calendar2 .k-calendar .k-content .k-today:before,
+.Calendar2 .k-calendar .k-content .k-state-selected:before,
+.Calendar2 .k-calendar .k-content .k-state-hover:before,
+.Calendar2 .k-calendar .k-content .k-state-focused:before {
+        top: -3px; /* 3px - Same as states (today, selected, hover, focus) border width */
+        left: -3px; /* 3px - Same as states (today, selected, hover, focus) border width */
+}
+
+.Calendar2 .k-calendar .k-content tr:last-child > .k-today:before,
+.Calendar2 .k-calendar .k-content tr:last-child > .k-state-selected:before,
+.Calendar2 .k-calendar .k-content tr:last-child > .k-state-hover:before,
+.Calendar2 .k-calendar .k-content tr:last-child > .k-state-focused:before {
+        height: calc(100% - 3px); /* 3px - Same as states (today, selected, hover, focus) border width */
+}
+
+.Calendar2 .k-calendar .k-content .k-today:first-child:before,
+.Calendar2 .k-calendar .k-content .k-today:last-child:before,
+.Calendar2 .k-calendar .k-content .k-state-selected:first-child:before,
+.Calendar2 .k-calendar .k-content .k-state-selected:last-child:before,
+.Calendar2 .k-calendar .k-content .k-state-hover:first-child:before,
+.Calendar2 .k-calendar .k-content .k-state-hover:last-child:before,
+.Calendar2 .k-calendar .k-content .k-state-focused:first-child:before,
+.Calendar2 .k-calendar .k-content .k-state-focused:last-child:before {
+        width: calc(100% - 3px); /* 3px - Same as states (today, selected, hover, focus) border width */
+}
+
+.Calendar2 .k-calendar .k-content .k-today:first-child:before,
+.Calendar2 .k-calendar .k-content .k-state-selected:first-child:before,
+.Calendar2 .k-calendar .k-content .k-state-hover:first-child:before,
+.Calendar2 .k-calendar .k-content .k-state-focused:first-child:before {
+        left: 0;
+}
+
+.Calendar2 .k-calendar .k-content .k-today:before {
+        border-color: #ffc300;
+}
+
+.Calendar2 .k-calendar .k-content .k-state-selected:before,
+.Calendar2 .k-calendar .k-content .k-state-focused:before {
+        border-color: #d821c3;
+}
+
+.Calendar2 .k-calendar .k-content .k-state-hover:before {
+        border-color: #3eb408;
+}
+
+/* Third Calendar styles - customize inner borders */
+.Calendar3 .k-content td,
+.Calendar3 .k-calendar .k-content .k-today:before,
+.Calendar3 .k-calendar .k-content .k-state-selected:before,
+.Calendar3 .k-calendar .k-content .k-state-hover:before,
+.Calendar3 .k-calendar .k-content .k-state-focused:before {
+        border-width: 1px;
+}
+
+.Calendar3 .k-calendar .k-content .k-today:before,
+.Calendar3 .k-calendar .k-content .k-state-selected:before,
+.Calendar3 .k-calendar .k-content .k-state-hover:before,
+.Calendar3 .k-calendar .k-content .k-state-focused:before {
+        top: -1px; /* 1px - same as the border width */
+        left: -1px; /* 1px - same as the border width */
+}
+
+.Calendar3 .k-calendar .k-content tr:last-child > .k-today:before,
+.Calendar3 .k-calendar .k-content tr:last-child > .k-state-selected:before,
+.Calendar3 .k-calendar .k-content tr:last-child > .k-state-hover:before,
+.Calendar3 .k-calendar .k-content tr:last-child > .k-state-focused:before {
+        height: calc(100% - 1px); /* 1px - same as the border width */
+}
+
+.Calendar3 .k-calendar .k-content .k-today:first-child:before,
+.Calendar3 .k-calendar .k-content .k-today:last-child:before,
+.Calendar3 .k-calendar .k-content .k-state-selected:first-child:before,
+.Calendar3 .k-calendar .k-content .k-state-selected:last-child:before,
+.Calendar3 .k-calendar .k-content .k-state-hover:first-child:before,
+.Calendar3 .k-calendar .k-content .k-state-hover:last-child:before,
+.Calendar3 .k-calendar .k-content .k-state-focused:first-child:before,
+.Calendar3 .k-calendar .k-content .k-state-focused:last-child:before {
+        width: calc(100% - 1px); /* 1px - same as the border width */
+}
+
+.Calendar3 .k-calendar .k-content .k-today:first-child:before,
+.Calendar3 .k-calendar .k-content .k-state-selected:first-child:before,
+.Calendar3 .k-calendar .k-content .k-state-hover:first-child:before,
+.Calendar3 .k-calendar .k-content .k-state-focused:first-child:before {
+        left: 0;
+}
+
+.Calendar3 .k-calendar .k-content td {
+        border-color: #33ccff;
+}
+
+/* Fourth Calendar styles - customize inner borders */
+.Calendar4 .k-calendar .k-content td {
+        border-width: 0px;
+}
+
+.Calendar4 .k-calendar .k-content .k-today:before, 
+.Calendar4 .k-calendar .k-content .k-state-selected:before,
+.Calendar4 .k-calendar .k-content .k-state-hover:before,
+.Calendar4 .k-calendar .k-content .k-state-focused:before {
+        height: calc(100% - 2px); /* 2px - the width of the states (today, selected, hovered, focused) borders */
+        width: calc(100% - 2px); /* 2px - the width of the states (today, selected, hovered, focused) borders */
+}
+
+.Calendar4 .k-calendar .k-content :first-child.k-today:before,
+.Calendar4 .k-calendar .k-content :first-child.k-state-selected:before,
+.Calendar4 .k-calendar .k-content :first-child.k-state-hover:before,
+.Calendar4 .k-calendar .k-content :first-child.k-state-focused:before {
+        width: calc(100% - 4px); /* 4px = 2 * the width of the states (today, selected, hovered, focused) borders */
+}
