@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>OnSelectEvent</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+    <!-- OnSelectEvent references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <section class="mainContent">
+        <span data-win-control="Telerik.UI.RadTokenInput" data-win-options="{
+                dataSource: [
+                    { Name: 'Pears', ID: 1, Amount: 15, Measure: 'kg', PricePerMeasure: 0.45, Currency: 'euro'},
+                    { Name: 'Apples', ID: 2, Amount: 4, Measure: 'kg', PricePerMeasure: 2.12, Currency: 'euro' },
+                    { Name: 'Strawberries', ID: 3, Amount: 3, Measure: 'kg', PricePerMeasure: 1.34, Currency: 'euro' },
+                    { Name: 'Bananas', ID: 4, Amount: 12, Measure: 'kg', PricePerMeasure: 3.12, Currency: 'euro' },
+                    { Name: 'Raspberries', ID: 5, Amount: 10, Measure: 'kg', PricePerMeasure: 6.25, Currency: 'euro' },
+                    { Name: 'Cherries', ID: 6, Amount: 34, Measure: 'kg', PricePerMeasure: 4.25, Currency: 'euro' }
+                ],
+                dataTextField: 'Name',
+                dataValueField: 'ID',
+                onselect: Sample.Helpers.itemSelected
+            }"></span>
+        <p>Last selected item: <span id="selection" style="color: #33ccff">None</span></p>
+    </section>
+    <div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>
