@@ -1,0 +1,31 @@
+﻿.mainContent {
+	margin: 120px;
+	width: 1000px;
+}
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+	width: 1000px;
+}
+
+.mainContent p {
+    line-height: 40px;
+    font-size: 26px;
+}
+
+#sparkline1 .k-sparkline {
+    margin-top: 12px;
+}
+
+#sparkline2 .k-sparkline {
+    margin-top: 5px;
+}
+
+#sparkline6 .k-sparkline {
+    margin-top: 5px;
+}
+
+#sparkline5 .k-sparkline {
+    margin-top: -12px;
+}
