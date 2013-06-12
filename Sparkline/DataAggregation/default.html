@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Axes</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+    <!-- Axes references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <section class="mainContent">
+        <p>
+            Revenue per year: 
+            <span id="sparkline" data-win-control="Telerik.UI.RadSparkline" data-win-options="{
+                    dataSource: {
+                        data: SampleData.salesPerDate
+                    },
+                    series: [
+                        {
+                            type: 'column',
+                            field: 'Value',
+                            aggregate: 'sum'
+                        }
+                    ],
+                    categoryAxis: {
+                        field: 'Date',
+                        type: 'date',
+                        baseUnit: 'years',
+                        crosshair: {
+                            visible: false
+                        }
+                    },
+                    valueAxis: {
+                        min: 3,
+					    max: 12
+                    },
+                    tooltip: {
+					    sharedTemplate: '&lt;strong&gt; #=category.getFullYear()# &lt;/strong&gt;: #=points[0].value#'
+				    },
+                    height: 20,
+                    width: 50
+                }"></span>
+        </p>
+    </section>
+    <div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>
