@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Types</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+    <!-- Types references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <section class="mainContent">
+        <p>
+            Revenue per month: 
+            <span id="sparkline1" data-win-control="Telerik.UI.RadSparkline" data-win-options="{
+                    type: 'line',
+                    data: [952, 940, 937, 980, 966, 965, 928, 916, 910, 980, 950, 965],
+                    height: 30,
+                    width: 100,
+                }"></span>
+        </p>
+        <p>
+            Revenue for January: 
+            <span id="sparkline2" data-win-control="Telerik.UI.RadSparkline" data-win-options="{
+                    type: 'bar',
+                    data: [952],
+                }"></span>
+        </p>
+        <p>
+            Revenue per month: 
+            <span id="sparkline3" data-win-control="Telerik.UI.RadSparkline" data-win-options="{
+                    type: 'column',
+                    data: [952, 940, 937, 980, 966, 965, 928, 916, 910, 980, 950, 965],
+                    height: 20,
+                    width: 100,
+                }"></span>
+        </p>
+        <p>
+            Revenue per month: 
+            <span id="sparkline4" data-win-control="Telerik.UI.RadSparkline" data-win-options="{
+                    type: 'area',
+                    data: [952, 940, 937, 980, 966, 965, 928, 916, 910, 980, 950, 965],
+                    height: 20,
+                    width: 100,
+                }"></span>
+        </p>
+        <p>
+            Revenue by product type: 
+            <span id="sparkline5" data-win-control="Telerik.UI.RadSparkline" data-win-options="{
+                    type: 'pie',
+                    data: [952, 940, 937, 980, 966],
+                    height: 75,
+                    width: 75,
+                }"></span>
+        </p>
+        <p>
+            Revenue for January: 
+            <span id="sparkline6" data-win-control="Telerik.UI.RadSparkline" data-win-options="{
+                    type: 'bullet',
+                    data: [955, 980],
+                    valueAxis: {
+                        plotBands: [
+                            {from: 0, to: 950, color: '#787878', opacity: 0.45},
+                            {from: 950, to: 980, color: '#787878', opacity: 0.85}
+                        ]
+                    },
+                    height: 20
+                }"></span>
+        </p>
+    </section>
+    <div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>
