@@ -1,0 +1,19 @@
+﻿.mainContent {
+	margin: 120px;
+	width: 1000px;
+}
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+	width: 1000px;
+}
+
+#gridcontainer {
+    visibility: hidden;
+}
+
+#gridtitle {
+    margin-bottom: 5px;
+    color: #fff;
+}

@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>ChartBulletSeries</title>
+
+	<!-- WinJS references -->
+	<link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+	<script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+	<script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+	<!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+	<!-- ChartBulletSeries references -->
+	<link href="/css/default.css" rel="stylesheet" />
+	<script src="/js/default.js"></script>
+</head>
+<body>
+	<section class="mainContent">
+		<div data-win-control="Telerik.UI.RadChart" data-win-options="{
+			series: [{ 
+				type: 'bullet',
+                gap: 10,
+				currentField: 'current',
+				targetField: 'target',
+				target: {
+				color: 'green',
+				line: {
+					width: 3
+				},
+				border: {
+					width: 1,
+					color: 'turquoise'
+				}
+				}
+			}],
+			dataSource: {
+				data: [ 
+					{current: 20000, target: 100000, category: 'Motorbikes'},
+					{current: 38000, target: 70000, category: 'Mopeds'},
+					{current: 42000, target: 57000, category: 'SUVs'},
+					{current: 40000, target: 93000, category: 'Sedans'},
+					{current: 22000, target: 40000, category: 'Hatchbacks'},
+					{current: 56000, target: 72000, category: 'Electric cars'},
+					{current: 72000, target: 80000, category: 'Convertibles'},
+					{current: 35000, target: 93000, category: 'Minivans'} 
+				],
+			},
+            categoryAxis: {
+                field: 'category'
+            },
+            valueAxis: {
+                labels: {
+                    format: 'c0'
+                }
+            },
+			tooltip: {
+				visible: true
+			}
+			}">
+		</div>
+	</section>
+	<div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>
