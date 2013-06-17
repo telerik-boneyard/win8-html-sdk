@@ -1,0 +1,122 @@
+[
+   {
+      "athleteId":"551",
+      "athleteName":"Nikolay Andrianov",
+      "medalsCount":16
+   },
+   {
+      "athleteId":"1870",
+      "athleteName":"Matt Biondi",
+      "medalsCount":11
+   },
+   {
+      "athleteId":"3953",
+      "athleteName":"Natalie Coughlin",
+      "medalsCount":11
+   },
+   {
+      "athleteId":"4888",
+      "athleteName":"Pyrros Dimas",
+      "medalsCount":4
+   },
+   {
+      "athleteId":"5120",
+      "athleteName":"Burton Downing",
+      "medalsCount":6
+   },
+   {
+      "athleteId":"5794",
+      "athleteName":"Ray Ewry",
+      "medalsCount":10
+   },
+   {
+      "athleteId":"6070",
+      "athleteName":"Jens Fiedler",
+      "medalsCount":5
+   },
+   {
+      "athleteId":"9133",
+      "athleteName":"Marcus Hurley",
+      "medalsCount":5
+   },
+   {
+      "athleteId":"12149",
+      "athleteName":"Larisa Latynina",
+      "medalsCount":18
+   },
+   {
+      "athleteId":"12503",
+      "athleteName":"Carl Lewis",
+      "medalsCount":10
+   },
+   {
+      "athleteId":"16893",
+      "athleteName":"Alexei Nemov",
+      "medalsCount":12
+   },
+   {
+      "athleteId":"17308",
+      "athleteName":"Paavo Nurmi",
+      "medalsCount":12
+   },
+   {
+      "athleteId":"17603",
+      "athleteName":"Takashi Ono",
+      "medalsCount":13
+   },
+   {
+      "athleteId":"17719",
+      "athleteName":"Merlene Ottey-Page",
+      "medalsCount":9
+   },
+   {
+      "athleteId":"18397",
+      "athleteName":"Aleksey Petrov",
+      "medalsCount":3
+   },
+   {
+      "athleteId":"18470",
+      "athleteName":"Michael Phelps",
+      "medalsCount":16
+   },
+   {
+      "athleteId":"21144",
+      "athleteName":"Boris Shakhlin",
+      "medalsCount":13
+   },
+   {
+      "athleteId":"21224",
+      "athleteName":"Martin Sheridan",
+      "medalsCount":9
+   },
+   {
+      "athleteId":"22529",
+      "athleteName":"Naim Suleymanoglu",
+      "medalsCount":3
+   },
+   {
+      "athleteId":"23172",
+      "athleteName":"Jenny Thompson",
+      "medalsCount":11
+   },
+   {
+      "athleteId":"23467",
+      "athleteName":"Dara Torres",
+      "medalsCount":11
+   },
+   {
+      "athleteId":"24460",
+      "athleteName":"Nicu Vlad",
+      "medalsCount":3
+   },
+   {
+      "athleteId":"24959",
+      "athleteName":"Ronny Weller",
+      "medalsCount":4
+   },
+   {
+      "athleteId":"25163",
+      "athleteName":"Bradley Wiggins",
+      "medalsCount":6
+   }
+]
