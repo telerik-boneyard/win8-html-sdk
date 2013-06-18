@@ -13,6 +13,15 @@
 		msg.showAsync();
 	}
 
+	function getPhotoTemplate(emp) {
+	    var html;
+
+	    MSApp.execUnsafeLocalFunction(function () {
+	        html = "<img src='" + emp.Photo + "' />";
+	    });
+	    return html;
+	}
+
 	app.onactivated = function (args) {
 		if (args.detail.kind === activation.ActivationKind.launch) {
 			if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
@@ -27,27 +36,31 @@
 					dataSource: {
 						transport: {
 							read: {
-								url: "http://ebayodata.cloudapp.net/Items?$format=json&search='helsinki%20postcard'",
+							    url: "http://services.odata.org/Northwind/Northwind.svc/Invoices",
 								dataType: "json"
 							}
 						},
 						schema: {
-							data: "d.results",
+							data: "value",
 							model: {
 								fields: {
-									Title: { type: "string" },
-									GalleryUrl: { type: "string" },
-									CurrentPrice: { type: "number" },
-									ViewItemUrl: { type: "string" }
+									ShipName: { type: "string" },
+									ShipCity: { type: "string" },
+									ShipCountry: { type: "string" },
+									ProductName: { type: "string" },
+									Quantity: { type: "number" },
+									UnitPrice: { type: "number" },
 								}
 							}
 						}
 					},
 					columns: [
-						{ field: "Title" },
-						{ field: "GalleryUrl", title: "Picture", template: "<img src='#=GalleryUrl#'/>", sortable: false },
-						{ field: "CurrentPrice", title: "Current Price", format: "{0:C}" },
-						{ field: "ViewItemUrl", title: "Url", template: "<a href='#=ViewItemUrl#'>View item</a>", sortable: false }
+						{ field: "ShipName", title: "Ship Name", width: 275},
+						{ field: "ShipCity", title: "Ship City" },
+						{ field: "ShipCountry", title: "Ship Country" },
+						{ field: "ProductName", title: "Product", width: 275 },
+                        { field: "Quantity", width: 100 },
+                        { field: "UnitPrice", title: "Unit Price", format: "{0:c0}", width: 100 }
 					],
 					sortable: "single, allowUnsort",
 					height: 400

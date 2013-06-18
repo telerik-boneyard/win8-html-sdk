@@ -28,7 +28,7 @@
 							}
 						},
 						schema: {
-							data: "d.results"
+							data: "value"
 						}
 					},
 					dataTextField: "CategoryName",
@@ -46,7 +46,7 @@
 							}
 						},
 						schema: {
-							data: "d.results"
+							data: "value"
 						}
 					},
 					dataTextField: "ProductName",

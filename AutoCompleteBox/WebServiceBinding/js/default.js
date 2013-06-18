@@ -34,7 +34,7 @@
             				}
             			},
             			schema: {
-            				data: "d.results"
+            				data: "value"
             			},
             			onerror: function (e) {
             				errorMsg.innerText = "Could not connect to remote service. Try again later.";

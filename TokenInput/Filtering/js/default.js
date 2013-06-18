@@ -31,7 +31,7 @@
                 }
             },
             schema: {
-                data: "d.results"
+                data: "value"
             },
             sort: { field: "ProductName", dir: "asc" },
             onerror: function (e) { debugger; }

@@ -51,7 +51,7 @@
 							}
 						},
 						schema: {
-							data: "d.results",
+							data: "value",
 							model: {
 								id: "ProductID",
 								fields: {
@@ -85,7 +85,7 @@
 							}
 						},
 						schema: {
-							data: "d.results"
+							data: "value"
 						}
 					},
 					dataTextField: "CategoryName",
