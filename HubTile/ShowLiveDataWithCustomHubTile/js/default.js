@@ -8,6 +8,17 @@
     var app = WinJS.Application;
     var activation = Windows.ApplicationModel.Activation;
 
+    // defining the products and hubTile variables here, so we can use them in functions outside the processAll promise.
+    var products, hubTile;
+
+    // generating a new random index and changing the content of the RadHubTile with the product at the new index
+    function refreshHubTile() {
+        var rndmItem = Math.floor(Math.random() * 20);
+        var currentItem = products[rndmItem];
+
+        hubTile.backContentTemplate = LiveDataSample.getDeal(currentItem);
+    }
+
     app.onactivated = function (args) {
         if (args.detail.kind === activation.ActivationKind.launch) {
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
@@ -19,18 +30,22 @@
             }
             args.setPromise(WinJS.UI.processAll().then(function () {
             	WinJS.xhr({
-            		url: "http://ebayodata.cloudapp.net/Deals?$format=json&$top=1",
+            	    url: "http://services.odata.org/V3/Northwind/Northwind.svc/Products?$format=json",
             	}).then(function (result) {
             		//result is the JSON response from the service, we call JSON.parse to parse it into a JavaScript object
             		var response = JSON.parse(result.response);
-            		//there is a single data item inside the d.results object in the parsed response
-            		var currentItem = response.d.results[0];
+            	    //there are 20 products inside the "value" object. We take one on random, so we can have a different one every time.
+            		products = response.value;
+            		var rndmItem = Math.floor(Math.random() * 20);
+            		var currentItem = products[rndmItem];
             		//create the hub tile once the data is available
-            		var hubTile = new Telerik.UI.RadCustomHubTile(document.getElementById("hubTile"), {
+            		hubTile = new Telerik.UI.RadCustomHubTile(document.getElementById("hubTile"), {
             			frontContentTemplate: '<h2>&nbsp;Newest Deal</h2>',
             			backContentTemplate: LiveDataSample.getDeal(currentItem),
             		});
             	});
+
+            	document.getElementById("refreshBtn").addEventListener("click", refreshHubTile);
             }));
         }
     };
@@ -49,10 +64,10 @@
 
 WinJS.Namespace.define("LiveDataSample", {
 	getDeal: WinJS.Utilities.markSupportedForProcessing(function (item) {
-		var template = "<div class='grid'><div class='cell1'><p class='smallerText'>" +
-		item.Title + "</p><p>Price: $" +
-		item.ConvertedCurrentPrice + "</p></div><div class='cell2'><img height='120' src='" +
-		item.Picture175Url + "' alt='Picture'/></div></div>";
+		var template = ["<div class='grid'><div class='cell1'><p class='smallerText'>",
+		item.ProductName, "</p><p>Price: $",
+		item.UnitPrice, "</p></div><div class='cell2'><img height='120' src='/images/Products/",
+		item.ProductID, ".png' alt='Picture'/></div></div>"].join("");
 
 		return template;
 	})

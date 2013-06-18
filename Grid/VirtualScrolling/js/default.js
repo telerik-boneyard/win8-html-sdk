@@ -31,7 +31,7 @@
 						}
 					},
 					schema: {
-						data: 'd.results',
+						data: 'value',
 						total: Scrolling.total
 					},
 					pageSize: 10
@@ -71,6 +71,6 @@
 
 WinJS.Namespace.define("Scrolling", {
 	total: function (response) {
-		return response.d.results.length;
+		return response.value.length;
 	}
 });

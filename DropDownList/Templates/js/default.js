@@ -29,12 +29,12 @@
             		dataSource: {
             			transport: {
             				read: {
-            					url: "http://ebayodata.cloudapp.net/Deals",
+            					url: "/js/movies.json",
             					dataType: "json"
             				}
             			},
             			schema: {
-            				data: "d.results"
+            				data: "movies"
             			}
             		},
             		template: "<div id='container'><img src='#=SmallPictureUrl#' style='width:50px' alt='ProductName'/><h6>#=Title#</h6></div>",

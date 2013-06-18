@@ -32,7 +32,7 @@
 							}
 						},
 						schema: {
-							data: "d.results",
+							data: "value",
 							model: {
 								fields: {
 									FirstName: { type: "string" },

@@ -34,7 +34,7 @@
 							}
 						},
 						schema: {
-							data: "d.results"
+							data: "value"
 						}
 					},
 					dataTextField: "CompanyName",
@@ -53,7 +53,7 @@
 							}
 						},
 						schema: {
-							data: "d.results"
+							data: "value"
 						}
 					},
 					dataTextField: "ProductName",

@@ -35,7 +35,7 @@
 							}
 						},
 						schema: {
-							data: "d.results"
+							data: "value"
 						}
 					},
 					template: document.getElementById("autoCompleteBoxTemplate").winControl,
