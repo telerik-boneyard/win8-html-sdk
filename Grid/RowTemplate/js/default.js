@@ -32,7 +32,7 @@
 							}
 						},
 						schema: {
-							data: "d.results"
+							data: "value"
 						}
 					},
 					columns: [{ title: 'Person Info' }, { title: 'Job Info' }],

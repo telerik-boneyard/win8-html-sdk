@@ -30,12 +30,12 @@
             		dataSource: {
             			transport: {
             				read: {
-            					url: "http://ebayodata.cloudapp.net/Deals",
+            					url: "/js/movies.json",
             					dataType: "json"
             				}
             			},
             			schema: {
-            				data: "d.results"
+            				data: "movies"
             			}
             		},
             		template: document.getElementById("comboBoxTemplate").winControl,

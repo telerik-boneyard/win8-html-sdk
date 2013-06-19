@@ -44,3 +44,7 @@ div.t-tile {
 	font-size: 10pt;
 }
 /*#endregion*/
+
+#refreshBtn {
+    display: block;
+}

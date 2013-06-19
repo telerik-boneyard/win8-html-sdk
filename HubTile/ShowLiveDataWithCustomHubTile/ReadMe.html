@@ -1,7 +1,11 @@
-﻿<p>This example shows a RadCustomHubTile displaying text and images coming from a remote point.</p>
+﻿<p>This example shows a RadCustomHubTile displaying data coming from a remote point.</p>
 
 <p>
-	The scenario is achieved by making an xhr request to the eBay OData service to access the latest deal, and creating a hubtile populated with
-this data. The RadCustomHubTile is initialized after the response is returned and its back content template is populated with the already
-available information (only the image needs to be loaded from the given url).
+	The scenario is achieved by making an xhr request to the Northwind service to retrieve all of the products, and creating a hubtile populated with
+a random product from the data. The RadCustomHubTile is initialized after the response is returned and its back content template is populated with the already
+available information (We have the images locally and load them by a given id).
+</p>
+
+<p>
+	Additionally there is a button, that on click gets a new random product item and refreshes the hubtile with it.
 </p>

@@ -43,7 +43,7 @@
 							}
 						},
 						schema: {
-							data: "d.results"
+							data: "value"
 						}
 					},
 					columns: [
@@ -65,7 +65,7 @@
 							}
 						},
 						schema: {
-							data: "d.results",
+							data: "value",
 							model: {
 								fields: {
 									OrderDate: { type: "date" }
