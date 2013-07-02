@@ -1,0 +1,41 @@
+﻿body {
+    background: #1D1D1D url('/images/examples-bg.png') no-repeat;
+}
+
+.mainContent {
+	margin: 100px 0 120px 120px;
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 4fr;
+}
+
+.leftContainer {
+    -ms-grid-column: 1;
+}
+
+.rightContainer {
+    -ms-grid-column: 2;
+    margin-left: 20px;
+}
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+}
+
+.leftContainer > h2, .leftContainer > div, .leftContainer > input {
+    margin-bottom: 10px;
+}
+
+#minNumeric, #maxNumeric {
+    display: block;
+}
+
+.t-numericbox {
+    width: 310px;
+}
+
+#listView .win-container {
+    margin: 20px;
+    padding: 10px;
+    background-color: #006AC1; 
+}

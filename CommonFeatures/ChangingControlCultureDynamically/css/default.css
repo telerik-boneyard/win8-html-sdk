@@ -1,0 +1,36 @@
+﻿body {
+    background: #1D1D1D url('/images/examples-bg.png') no-repeat;
+}
+
+.mainContent {
+	margin: 120px 0 250px 120px;
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 4fr;
+    -ms-grid-rows: 1fr 5fr;
+}
+
+.topContainer {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    margin-bottom: 20px;
+}
+
+.leftContainer {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+}
+
+.rightContainer {
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+}
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+}
+
+.leftContainer > h2, .leftContainer > div, .leftContainer > input {
+    margin-bottom: 10px;
+}

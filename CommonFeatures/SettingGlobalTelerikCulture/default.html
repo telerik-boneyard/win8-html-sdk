@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>SettingGlobalCulture</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+    <!-- SettingGlobalCulture references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+    <section class="mainContent">
+		<section class="leftContainer">
+            <h2>Preis Spanne</h2>
+            <div>
+                <span>Min Preis:</span>
+                <span id="minNumeric" data-win-control="Telerik.UI.RadNumericBox" data-win-options="{
+                        format: 'c0'
+                    }"></span>
+            </div>
+            <div>
+                <span>Max Preis:</span>
+                <span id="maxNumeric" data-win-control="Telerik.UI.RadNumericBox" data-win-options="{
+                        format: 'c0'
+                    }"></span>
+            </div>
+            <h2>Datum</h2>
+            <div id="calendar" data-win-control="Telerik.UI.RadCalendar" data-win-options="{
+                    min: '2013/06/01',
+                    max: '2013/06/30'
+                }"></div>
+            <input id="refreshBtn" type="button" value="Suchen" />
+		</section>
+        <section class="rightContainer">
+            <div id="ticketInfoTemplate" data-win-control="WinJS.Binding.Template">
+                <div style="width: 240px; height: 320px;">
+                    <h2 data-win-bind="innerText: company"></h2>
+                    <div>
+                        <span>Preis: </span><span data-win-bind="innerText: price ListView.formatPrice"></span>
+                    </div>
+                    <div>
+                        <span>Datum: </span><span data-win-bind="innerText: date ListView.formatDate"></span>
+                    </div>
+                    <div>
+                        <span>Uhrzeit der Abreise: </span><span data-win-bind="innerText: takeOffTime"></span>
+                    </div>
+                    <div>
+                        <span>Dauer: </span><span data-win-bind="innerText: duration"></span>
+                    </div>
+                    <div>
+                        <span>Tarifart: </span><span data-win-bind="innerText: fareType"></span>
+                    </div>
+                </div>
+            </div>
+            <h2>Flugtickets Information</h2>
+            <div id="listView" data-win-control="WinJS.UI.ListView" data-win-options="{
+                    itemDataSource: ListView.data,
+                    itemTemplate: select('#ticketInfoTemplate'),
+                    layout : {type: WinJS.UI.GridLayout}
+                }"></div>
+        </section>
+	</section>
+	    <div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		    uri: 'readme.html'
+	    }">
+	    </div>
+    </div>
+</body>
+</html>
