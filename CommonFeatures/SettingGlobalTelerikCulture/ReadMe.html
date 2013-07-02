@@ -1,0 +1,13 @@
+﻿<p>
+	This example is in German language. You can choose a min and max for the price span and a date of a flight - the example displays flight 
+    tickets offers, that match the search. The global culture is set to "de-DE" and therefore the RadNumericBox and the RadCalendar are with 
+    the German culture settings.
+</p>
+<p>
+	In the current scenario all the text is written in German. The Telerik global culture is set to "de-DE", so the controls can match the 
+    language and preferences of the German culture. By changing the culture, the RadCalendar settings are automatically adjusted to the German 
+    format preferences, the days of the week and the months are translated. The currency symbol of the RadNumericBox is also changed to euro. Note 
+    that a global culture change affects only newly initialized controls. That is why it is important to set the global culture before the 
+    processAll() method has initialized the controls. Additionally, the price of the ticket offers is formatted using the 
+    Telerik.Utilities.toString() method and is passed the "de-DE" culture to get the euro currency sign.
+</p>
