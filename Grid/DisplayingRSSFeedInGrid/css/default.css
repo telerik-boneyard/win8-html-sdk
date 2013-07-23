@@ -1,0 +1,43 @@
+﻿.mainContent {
+	margin: 120px;
+}
+
+.info {
+	color: #feef7a;
+	margin: 0 120px;
+}
+
+.newsContainer {
+	display: -ms-grid;
+	-ms-grid-columns: 1fr 3fr;
+	margin: 50px 0;
+}
+
+#categoriesList {
+	-ms-grid-column: 1;
+	-ms-grid-row-align: start;
+}
+
+#newsGrid {
+	-ms-grid-column: 2;
+}
+
+.win-template.win-item {
+	background-color: #4f1acb;
+	color: #fff;
+}
+
+.item {
+	display: -ms-grid;
+	-ms-grid-rows: 3fr 1fr;
+	margin: 0 0 10px 10px;
+}
+
+.item h2 {
+	-ms-grid-row: 1;
+	-ms-grid-row-align: center;
+}
+
+.item img {
+	-ms-grid-row: 2;
+}
