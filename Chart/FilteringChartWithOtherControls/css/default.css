@@ -1,0 +1,46 @@
+﻿.mainContent {
+	display: -ms-grid;
+	-ms-grid-columns: 2fr 5fr;
+	-ms-grid-rows: 1fr 8fr;
+	margin: 120px 0 0 120px;
+	height: 700px;
+	width: 1100px;
+}
+
+.leftColInput {
+	-ms-grid-column: 1;
+	-ms-grid-row: 1;
+	-ms-grid-row-span: 2;
+}
+
+.rightColSlider {
+	-ms-grid-column: 2;
+	-ms-grid-row: 1;
+	-ms-grid-row-align: start;
+	width: 100%;
+	margin-left: 10px;
+}
+
+.rightColChart {
+	-ms-grid-column: 2;
+	-ms-grid-row: 2;
+	height: 400px;
+	margin-top: 50px;
+}
+
+div.k-multiselect-wrap li {
+   width: 100%;
+   position: relative;
+}
+
+div.k-multiselect-wrap .k-delete {
+	position: absolute;
+	right: 0;
+	top: 0.4em;
+}
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+	width: 1000px;
+}
