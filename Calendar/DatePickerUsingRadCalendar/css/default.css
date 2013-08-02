@@ -1,0 +1,28 @@
+﻿.mainContent {
+	margin: 120px;
+	width: 1000px;
+	height: 350px;
+}
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+	width: 1000px;
+}
+
+#pickerContainer {
+	position: relative !important;
+}
+
+#textInput {
+	width: 250px;
+}
+
+#calendar {
+	position: absolute; 
+	top: 30px; 
+	left: 0; 
+	visibility: hidden;
+}
+
+	

@@ -11,6 +11,8 @@ Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "CustomizeBorders", "Customi
 EndProject
 Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "NavigateProgrammatically", "NavigateProgrammaticaly\NavigateProgrammatically.jsproj", "{B5F1E953-6129-47A6-A494-517D88143B03}"
 EndProject
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "DatePickerUsingRadCalendar", "DatePickerUsingRadCalendar\DatePickerUsingRadCalendar.jsproj", "{E4239A0C-35B9-452F-B55B-5651935C9928}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -143,6 +145,30 @@ Global
 		{B5F1E953-6129-47A6-A494-517D88143B03}.Release|x86.ActiveCfg = Release|x86
 		{B5F1E953-6129-47A6-A494-517D88143B03}.Release|x86.Build.0 = Release|x86
 		{B5F1E953-6129-47A6-A494-517D88143B03}.Release|x86.Deploy.0 = Release|x86
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Debug|ARM.ActiveCfg = Debug|ARM
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Debug|ARM.Build.0 = Debug|ARM
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Debug|ARM.Deploy.0 = Debug|ARM
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Debug|x64.ActiveCfg = Debug|x64
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Debug|x64.Build.0 = Debug|x64
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Debug|x64.Deploy.0 = Debug|x64
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Debug|x86.ActiveCfg = Debug|x86
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Debug|x86.Build.0 = Debug|x86
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Debug|x86.Deploy.0 = Debug|x86
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Release|ARM.ActiveCfg = Release|ARM
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Release|ARM.Build.0 = Release|ARM
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Release|ARM.Deploy.0 = Release|ARM
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Release|x64.ActiveCfg = Release|x64
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Release|x64.Build.0 = Release|x64
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Release|x64.Deploy.0 = Release|x64
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Release|x86.ActiveCfg = Release|x86
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Release|x86.Build.0 = Release|x86
+		{E4239A0C-35B9-452F-B55B-5651935C9928}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
