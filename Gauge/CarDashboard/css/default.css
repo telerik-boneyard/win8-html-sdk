@@ -1,0 +1,28 @@
+﻿.mainContent {
+	margin: 120px;
+	width: 1000px;
+}
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+	width: 1000px;
+}
+
+.dashboard {
+	background: url('/images/labels.png') no-repeat 130px 255px;
+	display: -ms-flexbox;
+	width: 1200px;
+}
+
+#fuel, #temperature {
+	margin-top: 100px;
+}
+
+#fuel {
+	margin-right: -30px;
+}
+
+#temperature {
+	margin-left: -50px;
+}

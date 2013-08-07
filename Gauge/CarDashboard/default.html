@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>CarDashboard</title>
+
+	<!-- WinJS references -->
+	<link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+	<script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+	<script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+	<!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+	<!-- CarDashboard references -->
+	<link href="/css/default.css" rel="stylesheet" />
+	<script src="/js/default.js"></script>
+</head>
+<body>
+	<section class="mainContent">
+		<div class="dashboard">
+		<div id="fuel" data-win-control="Telerik.UI.RadRadialGauge" data-win-options="{
+			min: 0,
+			max: 1,
+			majorUnit: 0.5,
+			minorUnit: 0.1,
+			minorTicks: {
+				size: 5,
+				color: 'white'
+			},
+			endAngle: 120,
+			ranges: [
+				{
+					from: 0,
+					to: 0.1,
+					color: '#de64a4'
+				}
+			],
+			rangeSize: 8,
+			rangePlaceholderColor: 'white',
+			rangeDistance: 5,
+			pointer: {
+				capSize: 0.05
+			},
+			labels: {
+				position: 'inside',
+				color: 'white'
+			},
+			value: 0.6,
+			height: 200,
+			width: 200
+		}">
+		</div>
+		<div id="speed" data-win-control="Telerik.UI.RadRadialGauge" data-win-options="{
+			min: 0, 
+			max: 240,
+			majorUnit: 20,
+			minorUnit: 5,
+			minorTicks: {
+				size: 5,
+				color: 'white'
+			},
+			ranges: [
+				{
+					from: 50,
+					to: 52,
+					color: '#de64a4'
+				},
+				{
+					from: 200,
+					to: 240,
+					color: 'pink'
+				}
+			],
+			rangeSize: 8,
+			rangePlaceholderColor: 'white',
+			rangeDistance: 5,
+			pointer: {
+				capSize: 0.05
+			},
+			labels: {
+				position: 'inside',
+				color: 'white'
+			},
+			value: 105,
+			height: 350,
+			width: 350
+		}">
+		</div>
+		<div id="rpm" data-win-control="Telerik.UI.RadRadialGauge" data-win-options="{
+			min: 0, 
+			max: 7,
+			majorUnit: 1,
+			minorUnit: 0.2,
+			minorTicks: {
+				size: 5,
+				color: 'white'
+			},
+			ranges: [
+				{
+					from: 5,
+					to: 6,
+					color: 'pink'
+				},
+				{
+					from: 6,
+					to: 7,
+					color: '#de64a4'
+				}
+			],
+			rangeSize: 8,
+			rangePlaceholderColor: 'white',
+			rangeDistance: 5,
+			pointer: {
+				capSize: 0.05
+			},
+			labels: {
+				position: 'inside',
+				color: 'white'
+			},
+			value: 3,
+			height: 350,
+			width: 350
+		}">
+		</div>
+
+		<div id="temperature" data-win-control="Telerik.UI.RadRadialGauge" data-win-options="{
+			min: 60,
+			max: 120,
+			majorUnit: 30,
+			minorUnit: 10,
+			minorTicks: {
+				size: 5,
+				color: 'white'
+			},
+			startAngle: 60,
+			endAngle: 210,
+			ranges: [
+				{
+					from: 110,
+					to: 120,
+					color: '#de64a4'
+				}
+			],
+			rangeSize: 8,
+			rangePlaceholderColor: 'white',
+			rangeDistance: 5,
+			pointer: {
+				capSize: 0.05
+			},
+			labels: {
+				position: 'inside',
+				color: 'white'
+			},
+			value: 100,	
+			height: 200,
+			width: 240
+		}">
+		</div>
+	</div>
+	</section>
+	<div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>
