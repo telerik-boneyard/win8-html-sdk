@@ -37,6 +37,8 @@ Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "PopulateGridOnBarSelect", "
 EndProject
 Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "ChartCrosshair", "ChartCrosshair\ChartCrosshair.jsproj", "{DD722FE1-9BE3-4E39-9FC6-9812284B2ED6}"
 EndProject
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "CustomizingChartAppearance", "CustomizingChartAppearance\CustomizingChartAppearance.jsproj", "{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -481,6 +483,30 @@ Global
 		{DD722FE1-9BE3-4E39-9FC6-9812284B2ED6}.Release|x86.ActiveCfg = Release|x86
 		{DD722FE1-9BE3-4E39-9FC6-9812284B2ED6}.Release|x86.Build.0 = Release|x86
 		{DD722FE1-9BE3-4E39-9FC6-9812284B2ED6}.Release|x86.Deploy.0 = Release|x86
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Debug|ARM.ActiveCfg = Debug|ARM
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Debug|ARM.Build.0 = Debug|ARM
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Debug|ARM.Deploy.0 = Debug|ARM
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Debug|x64.ActiveCfg = Debug|x64
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Debug|x64.Build.0 = Debug|x64
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Debug|x64.Deploy.0 = Debug|x64
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Debug|x86.ActiveCfg = Debug|x86
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Debug|x86.Build.0 = Debug|x86
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Debug|x86.Deploy.0 = Debug|x86
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Release|ARM.ActiveCfg = Release|ARM
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Release|ARM.Build.0 = Release|ARM
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Release|ARM.Deploy.0 = Release|ARM
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Release|x64.ActiveCfg = Release|x64
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Release|x64.Build.0 = Release|x64
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Release|x64.Deploy.0 = Release|x64
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Release|x86.ActiveCfg = Release|x86
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Release|x86.Build.0 = Release|x86
+		{1C0127C7-0C25-49F6-9B45-FFB060DD1ACB}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
