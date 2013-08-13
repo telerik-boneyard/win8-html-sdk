@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>CategoricalCharts</title>
+
+	<!-- WinJS references -->
+	<link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+	<script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+	<script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+	<!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+	<!-- CategoricalCharts references -->
+	<link href="/css/default.css" rel="stylesheet" />
+	<script src="/js/default.js"></script>
+	<script src="js/defaultData.js"></script>
+</head>
+<body>
+	<section class="mainContent">
+		<ul class="options">
+			<li>
+				<input type="radio" name="style" value="customSeries" id="customSeriesBtn" checked="checked" />
+                <label for="customSeriesBtn">Custom Series</label>
+			</li>
+			<li>
+				<input type="radio" name="style" value="customCategoryAxis" id="customValueAxisBtn" />
+                <label for="customValueAxisBtn">Custom Category Axis</label>
+			</li>
+			<li>
+				<input type="radio" name="style" value="customValueAxis" id="customCategoryAxisBtn" />
+                <label for="customCategoryAxisBtn">Custom Value Axis</label>
+			</li>
+            <li>
+				<input type="radio" name="style" value="customChartArea" id="customChartAreaBtn" />
+                <label for="customChartAreaBtn">Custom Chart Area</label>
+			</li>
+            <li>
+				<input type="radio" name="style" value="customPlotArea" id="customPlotAreaBtn" />
+                <label for="customPlotAreaBtn">Custom Plot Area</label>
+			</li>
+            <li>
+				<input type="radio" name="style" value="customLegend" id="customLegendBtn" />
+                <label for="customLegendBtn">Custom Legend</label>
+			</li>
+		</ul>
+		<div id="charts">
+			<div id="customSeries" data-win-control="Telerik.UI.RadChart" data-win-options="{
+					dataSource: {
+						data: DefaultData.salesData
+					},
+                    series: [{
+                        type: 'line',
+                        name: 'World Series',
+						field: 'Value',
+                        color: '#FFED6B',
+                        dashType: 'dash',
+                        width: 5,
+                        markers: {
+                            type: 'triangle',
+                            size: 15,
+                            background: '#FFED6B',
+                            border: {
+                                color: '#006295',
+                                width: '4'
+                            }
+                        }
+                    },{
+                        type: 'line',
+                        name: 'Europe Series',
+						field: 'Value1',
+                        color: '#2BAF4F',
+                        dashType: 'dot',
+                        width: 5,
+                        markers: {
+                            type: 'square',
+                            size: 15,
+                            background: '#3F3F3F',
+                            border: {
+                                color: '#2BAF4F',
+                                width: '4'
+                            }
+                        }
+                    }],
+                    categoryAxis: {
+                        field: 'Date',
+                    }
+				    }">
+			</div>
+            <div id="customCategoryAxis" data-win-control="Telerik.UI.RadChart" data-win-options="{
+					dataSource: {
+						data: DefaultData.salesData
+					},
+                    series: [{
+                        type: 'line',
+                        name: 'World Series',
+						field: 'Value'
+                    }, {
+                        type: 'line',
+                        name: 'Europe Series',
+						field: 'Value1'
+                    }],
+                    plotArea: {
+                        margin: 10
+                    },
+                    categoryAxis: {
+                        field: 'Date',
+                        line: {
+                            color: '#FFF'
+                        },
+                        majorTicks: {
+                            visible: true
+                        },
+                        majorGridLines : {
+                            dashType: 'dot',
+                            visible: true,
+                            color: '#FFF'
+                        },
+                        labels: {
+                            font: '18px serif',
+                            color: '#FF2B0F',
+                            rotation: 15
+                        }
+                    }
+				    }">
+			</div>
+            <div id="customValueAxis" data-win-control="Telerik.UI.RadChart" data-win-options="{
+					dataSource: {
+						data: DefaultData.salesData
+					},
+                    series: [{
+                        type: 'line',
+                        name: 'World Series',
+						field: 'Value'
+                    }, {
+                        type: 'line',
+                        name: 'Europe Series',
+						field: 'Value1'
+                    }],
+                    plotArea: {
+                        margin: 10
+                    },
+                    valueAxis: {
+                        majorUnit: 1,
+                        majorGridLines: {
+                            dashType: 'solid',
+                            color: '#969696',
+                            width: 1
+                        },
+                        minorGridLines: {
+                            visible: true,
+                            dashType: 'dot',
+                            color: '#CCCCCC',
+                            width: 1
+                        },
+                        majorTicks: {
+                            visible: true,
+                            width: 3
+                        },
+                        minorTicks: {
+                            visible: true
+                        },
+                        line: {
+                            visible: true,
+                            color: '#FFF'
+                        },
+                        labels: {
+                            step: 2,
+                            format: '00',
+                            border: {
+                                color: '#1C8225',
+                                width: 1
+                            },
+                            margin: 5,
+                            padding: 3
+                        }
+                    },
+                    categoryAxis: {
+                        field: 'Date',
+                        justified: false,
+                        line: {
+                            color: '#FFF',
+                            width: 3
+                        }
+                    }
+				    }">
+			</div>
+            <div id="customChartArea" data-win-control="Telerik.UI.RadChart" data-win-options="{
+					dataSource: {
+						data: DefaultData.salesData
+					},
+                    series: [{
+                        type: 'line',
+                        name: 'World Series',
+						field: 'Value'
+                    }, {
+                        type: 'line',
+                        name: 'Europe Series',
+						field: 'Value1'
+                    }],
+                    chartArea: {
+                        background: '#FF2B0F',
+                        opacity: 0.1,
+                        border: {
+                            color: '#FFF',
+                            width: 2,
+                            dashType: 'dashDot'
+                        }
+                    },
+                    categoryAxis: {
+                        field: 'Date'
+                    }
+				    }">
+			</div>
+            <div id="customPlotArea" data-win-control="Telerik.UI.RadChart" data-win-options="{
+					dataSource: {
+						data: DefaultData.salesData
+					},
+                    series: [{
+                        type: 'line',
+                        name: 'World Series',
+						field: 'Value'
+                    }, {
+                        type: 'line',
+                        name: 'Europe Series',
+						field: 'Value1'
+                    }],
+                    plotArea: {
+                        background: '#21BCFF',
+                        opacity: 0.1,
+                        margin: 10,
+                        border: {
+                            color: '#FFDA38',
+                            dashType: 'longDashDotDot',
+                            width: 2
+                        }
+                    },
+                    categoryAxis: {
+                        field: 'Date'
+                    }
+				    }">
+			</div>
+            <div id="customLegend" data-win-control="Telerik.UI.RadChart" data-win-options="{
+					dataSource: {
+						data: DefaultData.salesData
+					},
+                    series: [{
+                        type: 'line',
+                        name: 'World Series',
+						field: 'Value'
+                    }, {
+                        type: 'line',
+                        name: 'Europe Series',
+						field: 'Value1'
+                    }],
+                    legend: {
+                        background: '#B5B5B5',
+                        offsetX: -10,
+                        offsetY: -150,
+                        position: 'left',
+                        padding: 10,
+                        border: {
+                            color: '#BFFF11',
+                            width: 2,
+                            dashType: 'solid'
+                        },
+                        labels: {
+                            color: '#3D3D3D'
+                        },
+                        inactiveItems: {
+                            labels: {
+                                color: 'red'
+                            },
+                            markers: {
+                                color: 'red'
+                            }
+                        }
+                    },
+                    categoryAxis: {
+                        field: 'Date'
+                    }
+				    }">
+			</div>
+		</div>
+	</section>
+	<div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>
