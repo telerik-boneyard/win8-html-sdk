@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Customization</title>
+
+	<!-- WinJS references -->
+	<link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+	<script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+	<script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+	<!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+	<!-- Customization references -->
+	<link href="/css/default.css" rel="stylesheet" />
+	<script src="/js/default.js"></script>
+</head>
+<body>
+	<section class="mainContent">
+		<section id="slider-container">
+            <h2>RGB Sliders</h2>
+            <!-- #region controls-definition -->
+            <div id="sliderRed-container">
+                <p>Red</p>
+                <div id="sliderRed" data-win-control="Telerik.UI.RadSlider" data-win-options="{
+                        min: 0,
+                        max: 255,
+                        orientation: 'vertical',
+                        smallStep: 5,
+                        largeStep: 50,
+                        onslide: RGBSlider.ChangeSlideHandler,
+                        onchange: RGBSlider.ChangeSlideHandler
+                    }"></div>
+            </div>
+            <div id="sliderGreen-container">
+                <p>Green</p>
+                <div id="sliderGreen" data-win-control="Telerik.UI.RadSlider" data-win-options="{
+                        min: 0,
+                        max: 255,
+                        orientation: 'vertical',
+                        smallStep: 5,
+                        largeStep: 50,
+                        onslide: RGBSlider.ChangeSlideHandler,
+                        onchange: RGBSlider.ChangeSlideHandler
+                    }"></div>
+            </div>
+            <div id="sliderBlue-container">
+                <p>Blue</p>
+                <div id="sliderBlue" data-win-control="Telerik.UI.RadSlider" data-win-options="{
+                        min: 0,
+                        max: 255,
+                        orientation: 'vertical',
+                        smallStep: 5,
+                        largeStep: 50,
+                        onslide: RGBSlider.ChangeSlideHandler,
+                        onchange: RGBSlider.ChangeSlideHandler
+                    }"></div>
+            </div>
+            <!-- #endregion -->
+        </section>
+        <section id="color-sample-container">
+            <h2>Color Sample</h2>
+            <div id="color-sample"></div>
+        </section>
+	</section>
+	<div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>
