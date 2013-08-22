@@ -1,0 +1,49 @@
+﻿.mainContent {
+	margin: 120px;
+
+    display: -ms-grid;
+    -ms-grid-columns: 2fr 8fr;
+    -ms-grid-rows: 1fr;
+}
+
+#slider-container {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    text-align: center;
+}
+
+    #slider-container h2 {
+        margin-bottom: 20px;
+    }
+
+#listView-container {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+}
+
+#listView {
+    height: 550px;
+    width: 680px;
+}
+
+    #listView .win-item {
+        font-size: 8px;
+        width: 140px;
+        height: 140px;
+        background: #006AC1;
+        color: #FFF;
+        padding: 10px;
+
+        position: relative;
+    }
+
+    #listView h4 {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+    }
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+}
