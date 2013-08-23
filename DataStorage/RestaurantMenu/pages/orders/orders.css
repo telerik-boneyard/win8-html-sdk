@@ -1,0 +1,49 @@
+﻿.homepage section[role=main] {
+	margin-left: 120px;
+}
+
+@media screen and (-ms-view-state: snapped) {
+	.homepage section[role=main] {
+		margin-left: 20px;
+	}
+}
+
+@media screen and (-ms-view-state: portrait) {
+	.homepage section[role=main] {
+		margin-left: 100px;
+	}
+}
+
+#orders {
+	width: 80%;
+	height: 70%;
+	margin-top: 50px;
+}
+
+div.k-grid {
+	opacity: 0.8;
+}
+
+div.k-grid tr {
+	height: 60px;
+}
+
+#addOrderFlyout {
+	background-color: #1d1d1d;
+	color: white;
+}
+
+.editFormItem,
+#addOrderFlyout h2 {
+	margin-bottom: 20px;
+}
+
+.editFormItem {
+	display: -ms-grid;
+	-ms-grid-columns: 1fr 2fr;
+}
+
+.editFormItem > span {
+	-ms-grid-column: 2;
+	-ms-grid-column-align: end;
+}

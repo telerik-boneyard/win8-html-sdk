@@ -1,0 +1,36 @@
+﻿.homepage section[role=main] {
+    margin-left: 120px;
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .homepage section[role=main] {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (-ms-view-state: portrait) {
+    .homepage section[role=main] {
+        margin-left: 100px;
+    }
+}
+
+body {
+	background-image: url('/images/background.jpg');
+	background-size:cover;
+	color: white;
+}
+
+body div.menuTile {
+	 color: white;
+	 margin: 15px 0;
+	 opacity: 0.7
+}
+
+div.t-tile {
+	background-color: rgba(29,29,29,168);
+}
+
+div.t-tile .t-tileMessage span {
+	font: 28pt Segoe UI Light;
+}
+
