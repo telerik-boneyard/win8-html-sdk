@@ -193,7 +193,7 @@
 			});
 		}
 		else {
-			db.get("Orders").filter("tableNo", "like", tableNumber).execute().then(
+			db.get("Orders").filter("tableNo", " like", tableNumber).execute().then(
 			function (result) {
 				var orderId = result[0].id;
 				for (var i = 0; i < numberOfItems; i++) {
@@ -221,7 +221,7 @@
 	function deleteOrder() {
 		//delete current order from the Orders table and then trigger delete for all records in the OrderDetails table that use this order
 		db = Telerik.Data.Database.open("RestaurantDB");
-		db.get("Orders").filter("tableNo", "LIKE", tableNo).execute().then(deleteRow);
+		db.get("Orders").filter("tableNo", " like", tableNo).execute().then(deleteRow);
 	}
 
 	function deleteRow(result) {
