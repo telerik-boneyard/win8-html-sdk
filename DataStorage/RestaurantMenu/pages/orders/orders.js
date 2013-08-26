@@ -92,6 +92,7 @@
 	}
 
 	function populateCategoriesDdl() {
+	//populate the categories dropdown
 		db = Telerik.Data.Database.open("RestaurantDB");
 		db.get("Categories")
 		.execute()
@@ -102,6 +103,7 @@
 	}
 
 	function populateProductsDdl(id) {
+		//populate the products dropdown based on the chosen category
 		db = Telerik.Data.Database.open("RestaurantDB");
 		db.get("Products")
 		.filter("categoryId", "==", id)
@@ -114,6 +116,7 @@
 	}
 
 	function prepareInsertForm(e) {
+		//display the insert flyout and prepopulate controls
 		flyOut = document.querySelector("#addOrderFlyout").winControl;
 		flyOut.show(e.target, "bottom", "left");
 
@@ -123,9 +126,11 @@
 
 		var gridGroups = ordersGrid.dataSource.view;
 		if (e.target.id == "addBtn") {
+			//use the hidden input to mark the type of insert, it will be used later when the insert is triggered
 			typeHiddenInput.value = "new";
 
 			var filters = [];
+			//create a filter to display only tables that do not have active orders
 			for (var i = 0; i < gridGroups.length; i++) {
 				filters.push({ field: "tableNo", operator: "neq", value: parseInt(gridGroups[i].value) });
 			}
@@ -136,6 +141,7 @@
 			typeHiddenInput.value = "existing";
 			var gridGroups = ordersGrid.dataSource.view;
 			var filters = [];
+			//create a filter to display only tables that have opened orders
 			for (var i = 0; i < gridGroups.length; i++) {
 				filters.push({ field: "tableNo", operator: "eq", value: parseInt(gridGroups[i].value) });
 			}
@@ -144,9 +150,9 @@
 			tablesDdl.dataSource.sort = { field: "tableNo", dir: "asc" };
 			tablesDdl.dataSource.read();
 		}
-
+		//populate the categories dropdown, the products one will be populated afterwards
 		populateCategoriesDdl();
-
+		//needed to determine the orderId of the next inserted order
 		calculateMaxId();
 	}
 
@@ -158,6 +164,17 @@
 			else {
 				maxOrderId = 1;
 			}
+		}
+	}
+
+	function insertOrder() {
+		if (categoriesDdl.value && productsDdl.value && quantityBox.value) {
+			var productId = productsDdl.value;
+			var tableNumber = tablesDdl.value;
+			var numberOfItems = quantityBox.value;
+			var isNew = (typeHiddenInput.value == "new");
+
+			insertItemsToDb(isNew, tableNumber, productId, numberOfItems);
 		}
 	}
 
@@ -197,22 +214,12 @@
 		}, function (e) { });
 	}
 
-	function insertOrder() {
-		if (categoriesDdl.value && productsDdl.value && quantityBox.value) {
-			var productId = productsDdl.value;
-			var tableNumber = tablesDdl.value;
-			var numberOfItems = quantityBox.value;
-			var isNew = (typeHiddenInput.value == "new");
-
-			insertItemsToDb(isNew, tableNumber, productId, numberOfItems);
-		}
-	}
-
 	function insertOrderDetailToDb(orderId, productId) {
 		db.insert("OrderDetails", { orderId: orderId, productId: productId });
 	}
 
 	function deleteOrder() {
+		//delete current order from the Orders table and then trigger delete for all records in the OrderDetails table that use this order
 		db = Telerik.Data.Database.open("RestaurantDB");
 		db.get("Orders").filter("tableNo", "LIKE", tableNo).execute().then(deleteRow);
 	}
@@ -230,21 +237,24 @@
 			element.querySelector("#addBtn").addEventListener("click", prepareInsertForm);
 			element.querySelector("#addToBtn").addEventListener("click", prepareInsertForm);
 			element.querySelector("#insertBtn").addEventListener("click", insertOrder);
-
 			element.querySelector("#closeBtn").addEventListener("click", deleteOrder);
+			//populate orders grid
 			queryDb();
 		}
 	});
 
 	WinJS.Namespace.define("Orders", {
+		//handle the change event of the category dropdown to populate the product one with related products
 		categoryChange: WinJS.Utilities.markSupportedForProcessing(function (e) {
 			var id = e.target.value;
 			populateProductsDdl(id);
 		}),
+		//handle the change event of the product dropdown to enable the quantity numeric box
 		productChange: WinJS.Utilities.markSupportedForProcessing(function (e) {
 			quantityBox = Telerik.UI.to.NumericBox(document.querySelector("#quantityNumericBox").winControl);
 			var insertBtn = document.querySelector("#insertBtn");
 			quantityBox.enabled = true;
+			//enable the insert button as now there is enough information for an insert
 			insertBtn.disabled = false;
 
 		})
