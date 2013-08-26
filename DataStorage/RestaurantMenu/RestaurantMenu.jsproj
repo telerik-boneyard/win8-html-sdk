@@ -83,7 +83,7 @@
   <ItemGroup>
     <SDKReference Include="Microsoft.VCLibs, version=11.0" />
     <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
-    <SDKReference Include="Telerik.Storage.HTML, Version=2013.2.819" />
+    <SDKReference Include="Telerik.Storage.HTML, Version=2013.2.716" />
     <SDKReference Include="Telerik.UI, Version=2013.2.716" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
