@@ -1,0 +1,30 @@
+﻿.products section[role=main] {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .products section[role=main] {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .products section[role=main] {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+#products {
+	width: 80%;
+}
+
+div.k-grid {
+	opacity: 0.8;
+}
+
+div.k-grid tr {
+	height: 60px;
+}

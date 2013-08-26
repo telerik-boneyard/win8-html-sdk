@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>homePage</title>
+
+	<!-- WinJS references -->
+	<link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+	<script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+	<script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+	<!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+	<script src="///Telerik.Storage.HTML/js/Telerik.Data.js"></script>
+
+
+	<link href="/css/default.css" rel="stylesheet" />
+	<link href="/pages/orders/orders.css" rel="stylesheet" />
+	<script src="/pages/orders/orders.js"></script>
+</head>
+<body>
+	<!-- The content that will be loaded and displayed. -->
+	<div class="fragment homepage">
+		<header aria-label="Header content" role="banner">
+			<button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+			<h1 class="titlearea win-type-ellipsis">
+				<span class="pagetitle">Orders</span>
+			</h1>
+		</header>
+		<section aria-label="Main content" role="main" class="orders">
+			<button id="addBtn">Add New Order</button>
+			<button id="addToBtn">Add to Existing Order</button>
+			<div id="addOrderFlyout" data-win-control="WinJS.UI.Flyout">
+				<h2>Place order</h2>
+				<div class="editFormItem">
+					<label for="tableDdl">Select table:</label>
+					<span id="tableDdl" style="width: 250px" data-win-control="Telerik.UI.RadDropDownList" data-win-options="{
+					dataSource: {
+						data: [{tableNo: 1}, {tableNo: 2} ,{tableNo: 3} ,{tableNo: 4} ,{tableNo: 5}, {tableNo: 6}, {tableNo: 7},
+						 {tableNo: 8}, {tableNo: 9}, {tableNo: 10}]
+					},
+					dataTextField: 'tableNo',
+					dataValueField: 'tableNo'
+				}"></span>
+				</div>
+				<div class="editFormItem">
+					<label for="categoryDdl">Select category:</label>
+					<span id="categoryDdl" style="width: 250px" data-win-control="Telerik.UI.RadDropDownList" data-win-options="{
+					dataTextField: 'categoryName',
+					dataValueField: 'id',
+					onchange: Orders.categoryChange
+				}"></span>
+				</div>
+				<div class="editFormItem">
+					<label for="productDdl">Select product:</label>
+					<span id="productDdl" style="width: 250px" data-win-control="Telerik.UI.RadDropDownList" data-win-options="{
+					dataTextField: 'name',
+					dataValueField: 'id',
+					enabled: false,
+					onchange: Orders.productChange
+				}"></span>
+				</div>
+				<div class="editFormItem">
+					<label for="quantityNumericBox">Number of products:</label>
+					<span id="quantityNumericBox" style="width: 250px" data-win-control="Telerik.UI.RadNumericBox" data-win-options="{
+					min: 1,
+					format: 'n0',
+					enabled: false,
+					value: 1
+				}"></span>
+				</div>
+				<button id="insertBtn" disabled="disabled">Confirm selection</button>
+				<input id="typeInput" type="hidden" />
+			</div>
+			<div id="orders"></div>
+			<div id="orderMenu" data-win-control="WinJS.UI.Menu">
+				<button data-win-control="WinJS.UI.MenuCommand" data-win-options="{
+					id: 'closeBtn',
+					label: 'Close order'
+				}"></button>
+			</div>
+		</section>
+	</div>
+</body>
+</html>

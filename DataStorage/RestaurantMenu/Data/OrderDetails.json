@@ -1,0 +1,42 @@
+[
+	{
+		"OrderID": "1",
+		"ProductID": "7"
+	},
+	{
+		"OrderID": "1",
+		"ProductID": "36"
+	},
+	{
+		"OrderID": "1",
+		"ProductID": "26"
+	},
+	{
+		"OrderID": "2",
+		"ProductID": "10"
+	},
+	{
+		"OrderID": "2",
+		"ProductID": "21"
+	},
+	{
+		"OrderID": "2",
+		"ProductID": "32"
+	},
+	{
+		"OrderID": "2",
+		"ProductID": "36"
+	},
+	{
+		"OrderID": "2",
+		"ProductID": "34"
+	},
+	{
+		"OrderID": "3",
+		"ProductID": "5"
+	},
+	{
+		"OrderID": "3",
+		"ProductID": "2"
+	}
+]

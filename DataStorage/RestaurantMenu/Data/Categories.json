@@ -1,0 +1,30 @@
+[
+	{
+		"CategoryID": "1",
+		"CategoryName": "Soft Drinks"
+	},
+	{
+		"CategoryID": "2",
+		"CategoryName": "Alcoholic Drinks"
+	},
+	{
+		"CategoryID": "3",
+		"CategoryName": "Salads"
+	},
+	{
+		"CategoryID": "4",
+		"CategoryName": "Starters"
+	},
+	{
+		"CategoryID": "5",
+		"CategoryName": "Main Dishes"
+	},
+	{
+		"CategoryID": "6",
+		"CategoryName": "Soups"
+	},
+	{
+		"CategoryID": "7",
+		"CategoryName": "Desserts"
+	}
+]
