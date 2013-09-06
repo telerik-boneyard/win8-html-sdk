@@ -1,0 +1,22 @@
+﻿.mainContent {
+	margin: 120px 0 0 120px;
+}
+
+.mainContent > h1 {
+	margin-bottom: 50px;
+}
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+}
+
+.item {
+	background-color: #f3e9fc;
+	padding: 10px;
+}
+
+.item > h4,
+.item > span {
+	color: black;
+}

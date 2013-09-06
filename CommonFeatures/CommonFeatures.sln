@@ -5,6 +5,8 @@ Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "ChangingControlCultureDynam
 EndProject
 Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "SettingGlobalTelerikCulture", "SettingGlobalTelerikCulture\SettingGlobalTelerikCulture.jsproj", "{5ED56D19-AF76-4371-B5AC-C33A41E8E6DD}"
 EndProject
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "UsingRadControlsInWinJsTemplates", "UsingRadControlsInWinJsTemplates\UsingRadControlsInWinJsTemplates.jsproj", "{BD32891C-F929-428E-949B-F3DADB66F84B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,30 @@ Global
 		{5ED56D19-AF76-4371-B5AC-C33A41E8E6DD}.Release|x86.ActiveCfg = Release|x86
 		{5ED56D19-AF76-4371-B5AC-C33A41E8E6DD}.Release|x86.Build.0 = Release|x86
 		{5ED56D19-AF76-4371-B5AC-C33A41E8E6DD}.Release|x86.Deploy.0 = Release|x86
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Debug|ARM.ActiveCfg = Debug|ARM
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Debug|ARM.Build.0 = Debug|ARM
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Debug|ARM.Deploy.0 = Debug|ARM
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Debug|x64.ActiveCfg = Debug|x64
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Debug|x64.Build.0 = Debug|x64
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Debug|x64.Deploy.0 = Debug|x64
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Debug|x86.ActiveCfg = Debug|x86
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Debug|x86.Build.0 = Debug|x86
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Debug|x86.Deploy.0 = Debug|x86
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Release|ARM.ActiveCfg = Release|ARM
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Release|ARM.Build.0 = Release|ARM
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Release|ARM.Deploy.0 = Release|ARM
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Release|x64.ActiveCfg = Release|x64
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Release|x64.Build.0 = Release|x64
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Release|x64.Deploy.0 = Release|x64
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Release|x86.ActiveCfg = Release|x86
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Release|x86.Build.0 = Release|x86
+		{BD32891C-F929-428E-949B-F3DADB66F84B}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

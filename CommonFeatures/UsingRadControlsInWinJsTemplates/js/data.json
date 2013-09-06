@@ -1,0 +1,64 @@
+﻿{
+  "data":[
+    {
+      "Name":"Nancy Davolio",
+      "City":"Seattle",
+	  "Stats": [
+		{"Month": "Jan", "Sales": 5, "Customers": 5},
+		{"Month": "Feb", "Sales": 12, "Customers": 7},
+		{"Month": "Mar", "Sales": 9, "Customers": 7},
+		{"Month": "Apr", "Sales": 21, "Customers": 16},
+		{"Month": "May", "Sales": 23, "Customers": 17}
+	  ],
+	  "Bonus": 5000
+    },
+    {
+      "Name":"Andrew Fuller",
+      "City":"San Francisco",
+	  "Stats": [
+		{"Month": "Jan", "Sales": 10, "Customers": 7},
+		{"Month": "Feb", "Sales": 12, "Customers": 9},
+		{"Month": "Mar", "Sales": 15, "Customers": 8},
+		{"Month": "Apr", "Sales": 19, "Customers": 12},
+		{"Month": "May", "Sales": 21, "Customers": 13}
+		],
+		"Bonus": 4500
+    },
+    {
+      "Name":"Janet Levering",
+      "City":"Seattle",
+	  "Stats": [
+		{"Month": "Jan", "Sales": 14, "Customers": 9},
+		{"Month": "Feb", "Sales": 15, "Customers": 12},
+		{"Month": "Mar", "Sales": 14, "Customers": 12},
+		{"Month": "Apr", "Sales": 21, "Customers": 16},
+		{"Month": "May", "Sales": 18, "Customers": 15}
+		],
+		"Bonus": 4000
+    },
+    {
+      "Name":"Margaret Peacock",
+      "City":"San Francisco",
+	  "Stats": [
+		{"Month": "Jan", "Sales": 18, "Customers": 12},
+		{"Month": "Feb", "Sales": 24, "Customers": 16},
+		{"Month": "Mar", "Sales": 21, "Customers": 16},
+		{"Month": "Apr", "Sales": 25, "Customers": 18},
+		{"Month": "May", "Sales": 26, "Customers": 20}
+		],
+		"Bonus": 6500
+    },
+    {
+      "Name":"Michael Suyama",
+      "City":"Seattle",
+	  "Stats": [
+		{"Month": "Jan", "Sales": 16, "Customers": 10},
+		{"Month": "Feb", "Sales": 13, "Customers": 10},
+		{"Month": "Mar", "Sales": 17, "Customers": 13},
+		{"Month": "Apr", "Sales": 19, "Customers": 15},
+		{"Month": "May", "Sales": 23, "Customers": 19}
+		],
+		"Bonus": 5500
+    }
+  ]
+}

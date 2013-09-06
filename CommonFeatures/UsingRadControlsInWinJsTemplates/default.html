@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>UsingRadControlsInWinJsTemplates</title>
+
+	<!-- WinJS references -->
+	<link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+	<script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+	<script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+	<!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+	<!-- UsingRadControlsInWinJsTemplates references -->
+	<link href="/css/default.css" rel="stylesheet" />
+	<script src="/js/default.js"></script>
+</head>
+<body>
+	<section class="mainContent">
+		<h1>Using RadControls in WinJS.Binding.Template</h1>
+		<div id="template" data-win-control="WinJS.Binding.Template">
+			<div class="item">
+				<h4 data-win-bind="innerText: Name"></h4>
+				<span data-win-bind="innerText: City"></span>
+				<div id="salesChart" data-win-control="Telerik.UI.RadChart"
+					data-win-bind="winControl.dataSource.data: Stats CustomInitializers.chartBindingInitializer"
+					data-win-options="{
+					series:[
+						{
+							type: 'line',
+							name: 'Customers',
+							field: 'Customers'
+						},
+						{
+							type: 'line',
+							name: 'Sales',
+							field: 'Sales'
+						}
+					],
+					chartArea: {
+						background: '#f3e9fc'
+					},
+					categoryAxis: {
+						field: 'Month'
+					},
+					valueAxis: {
+						min: 0,
+						max: 30
+					},
+					tooltip: {
+						visible: true,
+						template: '#=category#: #=value#'
+					},
+					theme: 'light'
+				}">
+				</div>
+			</div>
+		</div>
+		<div id="listView" style="height: 450px" data-win-control="WinJS.UI.ListView" data-win-options="{
+				  itemTemplate: select('#template'),
+				  selectionMode: 'none'
+			  }">
+		</div>
+	</section>
+	<footer class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		    uri: 'readme.html'
+	    }">
+	</footer>
+</body>
+</html>
