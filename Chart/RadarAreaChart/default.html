@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Radar Area Series</title>
+
+	<!-- WinJS references -->
+	<link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+	<script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+	<script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+	<!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+	<!-- GettingStarted references -->
+	<link href="/css/default.css" rel="stylesheet" />
+	<script src="/js/default.js"></script>
+</head>
+<body>
+	<section class="mainContent">
+	    <section id="radar-chart-container">
+
+            <!-- Declaring and configuring the RadChart control with an empty radar series. -->
+            <!-- The empty series is there to keep the radar chart grid even if there are no radar series. -->
+            <div id="radarChart" data-win-control="Telerik.UI.RadChart" data-win-options="{
+                    width: 500,
+                    height: 500,
+                    categoryAxis: {
+                        categories: CPUStats.categories,
+                        majorGridLines: {
+                            visible: true,
+                            color: '#FFF'
+                        }
+                    },
+                    valueAxis: {
+                        max: 10
+                    },
+                    legend: {
+                        position: 'top'
+                    },
+                    series: [
+                        { type: 'radarArea' }
+                    ]
+                }"></div>
+
+        </section>
+        <section id="data-grid-container">
+
+            <!-- Declaring the RadGrid with single row selection enabled. -->
+            <div id="dataGrid" data-win-control="Telerik.UI.RadGrid" data-win-options="{
+                    height: 440,
+                    dataSource: CPUStats.dataSource,
+                    selectable: 'row'
+                }"></div>
+
+            <input id="add-btn" type="button" value="Add" />
+            <input id="clear-btn" type="button" value="Clear" />
+        </section>
+	</section>
+	<div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>

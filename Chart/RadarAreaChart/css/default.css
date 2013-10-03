@@ -1,0 +1,23 @@
+﻿.mainContent {
+	margin: 120px;
+
+    display: -ms-grid;
+    -ms-grid-columns: 4fr 6fr;
+    -ms-grid-rows: 100px auto;
+}
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+	width: 1000px;
+}
+
+#radar-chart-container {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+}
+
+#data-grid-container {
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+}
