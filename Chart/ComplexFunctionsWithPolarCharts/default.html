@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>ChartTooltips</title>
+
+	<!-- WinJS references -->
+	<link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+	<script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+	<script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+	<!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+	<!-- ChartTooltips references -->
+	<link href="/css/default.css" rel="stylesheet" />
+	<script src="/js/default.js"></script>
+</head>
+<body>
+	<section class="mainContent">
+		<div class="example">
+			<!-- The chart that will visualize the Rhodonea Function -->
+            <!-- The coordinates are generated in the code-behind -->
+			<div id="rhodoneaFuncChart" data-win-control="Telerik.UI.RadChart" data-win-options="{
+                    series: [{
+                        type: 'polarArea',
+                        data: RhodoneaFunction.coordinates
+                    }],
+                    title: {
+                        text: 'Rhodonea Curve',
+                        color: '#ccfa00'
+                    }
+                }"></div>
+
+		</div>
+        <div class="example">
+			<!-- The chart that will visualize the Archimedes Function -->
+            <!-- The coordinates are generated in the code-behind -->
+			<div id="archimedesFuncChart" data-win-control="Telerik.UI.RadChart" data-win-options="{
+                    series: [{
+                        type: 'polarScatter',
+                        data: ArchimedesFunction.coordinates
+                    }],
+                    title: {
+                        text: 'Archimedes Curve',
+                        color: '#ccfa00'
+                    }
+                }"></div>
+
+		</div>
+        <div class="example">
+			<!-- The chart that will visualize the Fermat Function -->
+            <!-- The coordinates are generated in the code-behind -->
+			<div id="fermatFuncChart" data-win-control="Telerik.UI.RadChart" data-win-options="{
+                    series: [{
+                        type: 'polarLine',
+                        data: FermatFunction.positiveCoords,
+                        color: '#1E98E4'
+                    },{
+                        type: 'polarLine',
+                        data: FermatFunction.negativeCoords,
+                        color: '#1E98E4'
+                    }],
+                    title: {
+                        text: 'Fermat Curve',
+                        color: '#ccfa00'
+                    }
+                }"></div>
+
+		</div>
+	</section>
+	<div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>
