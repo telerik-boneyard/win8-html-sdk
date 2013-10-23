@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>FilteringRadSchedulerDataSource</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+    <!-- FilteringRadSchedulerDataSource references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <section class="mainContent">
+        <!-- In the header we have the title and the cities you can choose from -->
+		<div id="header-wrapper">
+            <h1 id="title">Choose a City to See its Concert Schedule</h1>
+            <div class="city-container" id="berlin">
+                <label class="city-label" for="berlin-checkbox-1"></label>
+                <h3 class="city-name">Berlin</h3>
+                <input class="city-checkbox" id="berlin-checkbox-1" type="checkbox" checked="checked" />
+            </div>
+            <div class="city-container" id="paris">
+                <label class="city-label" for="paris-checkbox-2"></label>
+                <h3 class="city-name">Paris</h3>
+                <input class="city-checkbox" id="paris-checkbox-2" type="checkbox" checked="checked" />
+            </div>
+            <div class="city-container" id="london">
+                <label class="city-label" for="london-checkbox-3"></label>
+                <h3 class="city-name">London</h3>
+                <input class="city-checkbox" id="london-checkbox-3" type="checkbox" checked="checked" />
+            </div>
+            <div class="city-container" id="manchester">
+                <label class="city-label" for="manchester-checkbox-4"></label>
+                <h3 class="city-name">Manchester</h3>
+                <input class="city-checkbox" id="manchester-checkbox-4" type="checkbox" checked="checked" />
+            </div>
+        </div>
+        <!-- initializing RadScheduler with options exposed in the Scheduler namespace that is defined in the code-behind -->
+        <div id="scheduler" data-win-control="Telerik.UI.RadScheduler" data-win-options="{
+                height: 700,
+                date: Scheduler.date,
+                startTime: Scheduler.startTime,
+                endTime: Scheduler.endTime,
+                dataSource: Scheduler.dataSource,
+                resources: Scheduler.resources,
+                views: ['week', 'agenda']
+            }"></div>
+	</section>
+	<div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>
