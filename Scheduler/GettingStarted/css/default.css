@@ -1,0 +1,58 @@
+﻿.mainContent {
+	margin: 120px 0 50px 120px;
+}
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+}
+
+#title, #header-wrapper {
+    margin-bottom: 15px;
+}
+
+.city-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.city-label {
+    display: block;
+    height: 110px;
+    width: 110px;
+}
+
+.city-name {
+    position: absolute;
+    bottom: 7px;
+    left: 5px;
+    font-size: 12px;
+}
+
+.city-checkbox {
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+}
+
+#berlin {
+    background-image: url('/images/cities/Berlin.jpg');
+    border: 2px solid #FBF192;
+}
+
+#paris {
+    background-image: url('/images/cities/Paris.jpg');
+    border: 2px solid #27BAB2;
+}
+
+#london {
+    background-image: url('/images/cities/London.jpg');
+    border: 2px solid #0083D4;
+}
+
+#manchester {
+    background-image: url('/images/cities/Manchester.jpg');
+    border: 2px solid #FABF09;
+}
