@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>GettingStarted</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+    <!-- GettingStarted references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <section class="mainContent">
+        <div id="target" contenteditable="true" style="width: 600px;">
+            Telerik is a market-leading provider of end-to-end solutions for application development, software testing, agile project management, 
+            reporting, and content management across all major development platforms. Telerik's award-winning software development products enable 
+            enterprises and organizations of every size to generate tangible productivity gains, reduce time-to-market, and stay on time and under 
+            budget. With tens of thousands of users in more than 90 countries around the world, Telerik’s customers include numerous Fortune 2000 
+            companies, academic institutions, governments, and non-profit organizations.
+        </div>
+		<div data-win-control="Telerik.UI.RadRadialMenu" data-win-options="{
+                target: '#target',
+                items: [{
+							id: 'FontName',
+							text: 'Font Name',
+							icon: '\uE185',
+							items: [
+								{id: 'Arial', text: 'Arial', style: {font: '10pt Arial'}},
+								{id: 'Calibri', text: 'Calibri', style: {font: '12pt Calibri'}},
+								{id: 'Cambria', text: 'Cambria', style: {font: '12pt Cambria'}},
+								{id: 'Comic Sans', text: 'Comic Sans', style: {font: '12pt Comic sans'}},
+								{id: 'Consolas', text: 'Consolas', style: {font: '11pt Consolas'}},
+								{id: 'Segoe UI', text: 'Segoe UI', style: {font: '10pt Segoe UI'}},
+								{id: 'Times', text: 'Times', style: {font: '12pt Times'}},
+								{id: 'Verdana', text: 'Verdana', style: {font: '10pt Verdana'}}
+							]
+                        },
+						{
+							id: 'FontSize',
+							text: 'Font Size',
+							icon: '\uE1C8',
+							items: [
+								{id: '1', text: 'xx-small', style: {font: '12pt Segoe UI'}},
+								{id: '2', text: 'x-small', style: {font: '12pt Segoe UI'}},
+								{id: '3', text: 'small', style: {font: '12pt Segoe UI'}},
+								{id: '4', text: 'medium', style: {font: '12pt Segoe UI'}},
+								{id: '5', text: 'large', style: {font: '12pt Segoe UI'}}
+							]
+						},
+						{
+							id: 'FontColor',
+							text: 'Font Color',
+							icon: '\uE186',
+							items: [
+								{id: 'Orange', style: {background: 'Orange'}},
+								{id: 'Purple',style: {background: 'Purple'}},
+								{id: 'Lightgreen', style: {background: 'Lightgreen'}},
+								{id: 'Teal', style: {background: 'Teal'}},
+								{id: 'Red', style: {background: 'Red'}}
+							]
+						},
+						{
+							id: 'BackColor',
+							text: 'Back Color',
+							icon: '\uE193',
+							items: [
+								{id: 'Orange', style: {background: 'Orange'}},
+								{id: 'Purple',style: {background: 'Purple'}},
+								{id: 'Lightgreen', style: {background: 'Lightgreen'}},
+								{id: 'Teal', style: {background: 'Teal'}},
+								{id: 'Red', style: {background: 'Red'}}
+							]
+						},
+                        {
+							id: 'Lists',
+							text: 'Lists',
+							icon: '\uE179',
+							items: [
+                                {
+                                    id: 'InsertOrderedList', 
+                                    text: 'Numbered list', 
+                                    icon: {
+                                        url: 'images/orderedlist.png',
+                                        width: 36,
+                                        height: 46
+                                    },
+                                    selectable: true,
+                                    group: 'lists'
+                                },
+								{
+                                    id: 'InsertUnorderedList',
+                                    text: 'Bullet list', 
+                                    icon: {
+                                        url: 'images/unorderedlist.png',
+                                        width: 36,
+                                        height: 46
+                                    },
+                                    selectable: true,
+                                    group: 'lists'
+                                }
+							]
+                        },
+                        {
+							id: 'Justify',
+							text: 'Justify',
+							icon: '\uE1A1',
+							items: [
+								{
+                                    id: 'JustifyLeft', 
+                                    text: 'Left', 
+                                    icon: '\uE1A0', 
+                                    selectable: true, 
+                                    group: 'justify'},
+								{
+                                    id: 'JustifyCenter',
+                                    text: 'Center', 
+                                    icon: '\uE1A1', 
+                                    selectable: true, 
+                                    group: 'justify'
+                                },
+								{
+                                    id: 'JustifyRight', 
+                                    text: 'Right', 
+                                    icon: '\uE1A2', 
+                                    selectable: true, 
+                                    group: 'justify'
+                                }
+							]
+                        },
+                        {
+							id: 'CopyTools',
+							text: 'Copy',
+							icon: '\uE16F',
+							items: [
+                                { id: 'Cut', text: 'Cut', icon: '\uE16B' },
+								{ id: 'Copy', text: 'Copy', icon: '\uE16F' },
+								{ id: 'Paste', text: 'Paste', icon: '\uE16D' }
+							]
+                        },
+                        {
+							id: 'FontStyle',
+							text: 'Font Style',
+							icon: '\uE19B',
+                            items: [
+                                { id: 'Bold', text: 'Bold', icon: '\uE19B', selectable: true },
+                                { id: 'Italic', text: 'Italic', icon: '\uE199', selectable: true },
+						        { id: 'Underline', text: 'Underline', icon: '\uE19A', selectable: true }
+                            ]
+                        }
+                    ],
+					onaction: Events.action,
+					onexpand: Events.expand
+            }"></div>
+	</section>
+	<div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>
