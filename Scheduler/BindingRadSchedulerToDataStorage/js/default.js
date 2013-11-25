@@ -8,6 +8,7 @@
     var app = WinJS.Application;
     var activation = Windows.ApplicationModel.Activation;
 
+    // defining the Data Storage schema for the database. The schema matches the RadScheduler event model.
     var schemaDB = {
         tables: [{
             name: 'Events',
@@ -33,58 +34,8 @@
         }]
     };
 
-    var transport = {
-        type: "dataStorage",
-        transport: {
-            read: {
-                data: {
-                    dbName: "SchedulerDB",
-                    tableName: "Events"
-                }
-            },
-            create: {
-                data: {
-                    dbName: "SchedulerDB",
-                    tableName: "Events"
-                }
-            },
-            update: {
-                data: {
-                    dbName: "SchedulerDB",
-                    tableName: "Events"
-                }
-            },
-            destroy: {
-                data: {
-                    dbName: "SchedulerDB",
-                    tableName: "Events"
-                }
-            }
-        }
-    };
-
-    var schema = {
-        schema: {
-            model: {
-                id: "id",
-                fields: {
-                    id: { from: "id", type: "number", nullable: true },
-                    title: { from: "title", validation: { required: true } },
-                    start: { from: "start", type: "date" },
-                    end: { from: "end", type: "date" },
-                    isAllDay: { from: "isAllDay", type: "boolean" },
-                    recurrenceId: { from: "recurrenceId", type: "number" },
-                    recurrenceRule: { from: "recurrenceRule", type: "string" },
-                    description: { from: "description", type: "string" },
-                    recurrenceException: { from: "recurrenceException", type: "string" },
-                    startTimeZone: { from: "startTimeZone", type: "string" },
-                    endTimeZone: { from: "endTimeZone", type: "string" }
-                }
-            }
-        }
-    };
-
-
+    // defining the RadScheduler DataSource object. The important things here are the type "dataStorage", the transport settings for 
+    // the Data Storage component and the schema that matches the Data Storage schema.
     WinJS.Namespace.define("Scheduler.Data", {
         dataSource: new Telerik.Data.SchedulerDataSource({
             type: "dataStorage",
@@ -147,7 +98,11 @@
                 // Restore application state here.
             }
 
+            // opens the database if it is created and creates if no such database exists.
             db = Telerik.Data.Database.open("SchedulerDB", "local", schemaDB);
+            // you have to set this property to false, because otherwise the object will be saved in a single 
+            // column as the JSON file. In our case, we need the data to be saved in multiple columns defined by 
+            // the database schema.
             db.serializeObject = false;
 
             args.setPromise(WinJS.UI.processAll());
