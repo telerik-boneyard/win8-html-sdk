@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>GettingStarted</title>
+
+	<!-- WinJS references -->
+	<link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+	<script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+	<script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+	<!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+    <!-- Telerik Data Storage reference -->
+    <script src="///Telerik.Storage.HTML/js/Telerik.Data.js"></script>
+
+	<!-- GettingStarted references -->
+	<link href="/css/default.css" rel="stylesheet" />
+	<script src="/js/default.js"></script>
+</head>
+<body>
+	<section class="mainContent">
+		
+        <!-- defining RadGrid with columns and the editable settings configured -->
+		<div id="grid" data-win-control="Telerik.UI.RadGrid" data-win-options="{
+                height: 500,
+                dataSource: Grid.Data.dataSource,
+                columns: [
+                    { field: 'name', title: 'Name' },
+                    { field: 'jobTitle', title: 'Job Title' },
+                    { field: 'birthDate', title: 'Birth Date' },
+                    { field: 'hireDate', title: 'Hire Date' }
+                ],
+                editable: {
+                    enabled: true,
+                    mode: 'row',
+                    create: true,
+                    update: true,
+                    destroy: true
+                }
+            }"></div>
+
+	</section>
+	<div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>
