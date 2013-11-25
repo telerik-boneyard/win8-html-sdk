@@ -83,8 +83,8 @@
   <ItemGroup>
     <SDKReference Include="Microsoft.VCLibs, version=11.0" />
     <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
-    <SDKReference Include="Telerik.Storage.HTML, Version=2013.3.1015" />
-    <SDKReference Include="Telerik.UI, Version=2013.3.1015"/>
+    <SDKReference Include="Telerik.Storage.HTML, Version=2013.3.1105" />
+    <SDKReference Include="Telerik.UI, Version=2013.3.1105"/>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
   <!-- To modify your build process, add your task inside one of the targets below then uncomment
