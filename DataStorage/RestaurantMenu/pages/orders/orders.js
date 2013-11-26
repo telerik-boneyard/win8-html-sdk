@@ -36,7 +36,11 @@
 			dataSource: {
 				data: result,
 				//group the grid by table number
-				group: { field: "tableNo" },
+				group: {
+					field: "tableNo", aggregates: [
+							{ field: "price", aggregate: "sum" }
+					]
+				},
 				//define an aggregate which will be used to follow the last order id used
 				aggregate: { field: "orderId", aggregate: "max" }
 			},
@@ -48,6 +52,7 @@
 				{
 					title: "price",
 					template: "$#=data.price#",
+					groupFooterTemplate: "<span style='color: green'>Total order value: $#=price.sum#</span>",
 					width: 100
 				},
 				{

@@ -1,6 +1,5 @@
 ﻿[
 	{
-		"ID": "1",
 		"Name": "Water",
 		"CategoryID": "1",
 		"Description": "",
@@ -8,7 +7,6 @@
 		"Price": "1"
 	},
 	{
-		"ID": "2",
 		"Name": "Coffee",
 		"CategoryID": "1",
 		"Description": "",
@@ -16,7 +14,6 @@
 		"Price": "1.2"
 	},
 	{
-		"ID": "3",
 		"Name": "Cappuccino",
 		"CategoryID": "1",
 		"Description": "Espresso, hot milk, milk foam",
@@ -24,7 +21,6 @@
 		"Price": "1.7"
 	},
 	{
-		"ID": "4",
 		"Name": "Tea",
 		"CategoryID": "1",
 		"Description": "Herbal, fruit, green, black",
@@ -32,7 +28,6 @@
 		"Price": "1.2"
 	},
 	{
-		"ID": "5",
 		"Name": "Coke",
 		"CategoryID": "1",
 		"Description": "",
@@ -40,7 +35,6 @@
 		"Price": "1.5"
 	},
 	{
-		"ID": "6",
 		"Name": "Juice",
 		"CategoryID": "1",
 		"Description": "Orange, banana, apple, apricot, peach, sour cherry, pineapple",
@@ -48,7 +42,6 @@
 		"Price": "1.5"
 	},
 	{
-		"ID": "7",
 		"Name": "Milk",
 		"CategoryID": "1",
 		"Description": "",
@@ -56,7 +49,6 @@
 		"Price": "1.2"
 	},
 	{
-		"ID": "8",
 		"Name": "Cocoa milk",
 		"CategoryID": "1",
 		"Description": "",
@@ -64,7 +56,6 @@
 		"Price": "1.7"
 	},
 	{
-		"ID": "9",
 		"Name": "Draft beer",
 		"CategoryID": "2",
 		"Description": "",
@@ -72,7 +63,6 @@
 		"Price": "2"
 	},
 	{
-		"ID": "10",
 		"Name": "Draft beer",
 		"CategoryID": "2",
 		"Description": "",
@@ -80,7 +70,6 @@
 		"Price": "2.5"
 	},
 	{
-		"ID": "11",
 		"Name": "Bottled beer",
 		"CategoryID": "2",
 		"Description": "",
@@ -88,7 +77,6 @@
 		"Price": "2.5"
 	},
 	{
-		"ID": "12",
 		"Name": "Vodka",
 		"CategoryID": "2",
 		"Description": "",
@@ -96,7 +84,6 @@
 		"Price": "5"
 	},
 	{
-		"ID": "13",
 		"Name": "Whisky",
 		"CategoryID": "2",
 		"Description": "",
@@ -104,7 +91,6 @@
 		"Price": "5"
 	},
 	{
-		"ID": "14",
 		"Name": "Gin",
 		"CategoryID": "2",
 		"Description": "",
@@ -112,7 +98,6 @@
 		"Price": "5"
 	},
 	{
-		"ID": "15",
 		"Name": "Rum",
 		"CategoryID": "2",
 		"Description": "",
@@ -120,7 +105,6 @@
 		"Price": "5"
 	},
 	{
-		"ID": "16",
 		"Name": "Tuna salad",
 		"CategoryID": "3",
 		"Description": "Lettuce, tuna fish, tomatoes, sweet corn, sauce",
@@ -128,7 +112,6 @@
 		"Price": "6.4"
 	},
 	{
-		"ID": "17",
 		"Name": "Caprese salad",
 		"CategoryID": "3",
 		"Description": "Tomatoes, mozzarella, pesto",
@@ -136,7 +119,6 @@
 		"Price": "6.6"
 	},
 	{
-		"ID": "18",
 		"Name": "Carrots & cabbage",
 		"CategoryID": "3",
 		"Description": "",
@@ -144,7 +126,6 @@
 		"Price": "4"
 	},
 	{
-		"ID": "19",
 		"Name": "Greek salad",
 		"CategoryID": "3",
 		"Description": "Tomates, cucumbers, onion, feta cheese, oregano",
@@ -152,7 +133,6 @@
 		"Price": "5.7"
 	},
 	{
-		"ID": "20",
 		"Name": "Green salad",
 		"CategoryID": "3",
 		"Description": "Lettuce, cucumbers, raddish, boiled egg, scallion, olives",
@@ -160,7 +140,6 @@
 		"Price": "5"
 	},
 	{
-		"ID": "21",
 		"Name": "Bruschetta with prosciutto",
 		"CategoryID": "4",
 		"Description": "Olive oil, prosciutto",
@@ -168,7 +147,6 @@
 		"Price": "6.5"
 	},
 	{
-		"ID": "22",
 		"Name": "Bruschetta with tomatoes",
 		"CategoryID": "4",
 		"Description": "Tomatoes, onions, olive oil, basilico",
@@ -176,7 +154,6 @@
 		"Price": "6"
 	},
 	{
-		"ID": "23",
 		"Name": "Quesadillas with guacamole",
 		"CategoryID": "4",
 		"Description": "Tortilla, guacamole, sour cream",
@@ -184,7 +161,6 @@
 		"Price": "6.5"
 	},
 	{
-		"ID": "24",
 		"Name": "Mushrooms with ricotta",
 		"CategoryID": "4",
 		"Description": "",
@@ -192,7 +168,6 @@
 		"Price": "7"
 	},
 	{
-		"ID": "25",
 		"Name": "Chicken wings",
 		"CategoryID": "4",
 		"Description": "Grilled or fried",
@@ -200,7 +175,6 @@
 		"Price": "6"
 	},
 	{
-		"ID": "26",
 		"Name": "Spring rolls with chicken",
 		"CategoryID": "4",
 		"Description": "Chicken, cabbage, carrots, soy sauce, ginger",
@@ -208,7 +182,6 @@
 		"Price": "6.7"
 	},
 	{
-		"ID": "27",
 		"Name": "Spaghetti Bolognese",
 		"CategoryID": "5",
 		"Description": "Minced meat, tomato sauce, basilico, onions, carrots, wine",
@@ -216,7 +189,6 @@
 		"Price": "7.5"
 	},
 	{
-		"ID": "28",
 		"Name": "Spaghetti Carbonara",
 		"CategoryID": "5",
 		"Description": "Eggs, Pecorino Romano cheese, bacon",
@@ -224,7 +196,6 @@
 		"Price": "7.5"
 	},
 	{
-		"ID": "29",
 		"Name": "Pork chop with garnish",
 		"CategoryID": "5",
 		"Description": "Steamed vegetables or french fries",
@@ -232,7 +203,6 @@
 		"Price": "8.5"
 	},
 	{
-		"ID": "30",
 		"Name": "Veal chop with garnish",
 		"CategoryID": "5",
 		"Description": "Steamed potatoes",
@@ -240,7 +210,6 @@
 		"Price": "9"
 	},
 	{
-		"ID": "31",
 		"Name": "Chicken julienne",
 		"CategoryID": "5",
 		"Description": "Cream, mushrooms, sweet corn, parmesan cheese, butter",
@@ -248,7 +217,6 @@
 		"Price": "8"
 	},
 	{
-		"ID": "32",
 		"Name": "Baked potatoes with bacon",
 		"CategoryID": "5",
 		"Description": "Bacon, cream, yellow cheese",
@@ -256,7 +224,6 @@
 		"Price": "5.5"
 	},
 	{
-		"ID": "33",
 		"Name": "Chicken soup",
 		"CategoryID": "6",
 		"Description": "",
@@ -264,7 +231,6 @@
 		"Price": "2.5"
 	},
 	{
-		"ID": "34",
 		"Name": "Mushroom cream soup",
 		"CategoryID": "6",
 		"Description": "",
@@ -272,7 +238,6 @@
 		"Price": "3"
 	},
 	{
-		"ID": "35",
 		"Name": "Vegetable soup",
 		"CategoryID": "6",
 		"Description": "",
@@ -280,7 +245,6 @@
 		"Price": "2"
 	},
 	{
-		"ID": "36",
 		"Name": "Ice cream",
 		"CategoryID": "7",
 		"Description": "Chocolate, vanilla, strawberry, banana, lemon",
@@ -288,7 +252,6 @@
 		"Price": "2"
 	},
 	{
-		"ID": "37",
 		"Name": "Pancakes",
 		"CategoryID": "7",
 		"Description": "With honey/jam/chocolate",
@@ -296,7 +259,6 @@
 		"Price": "3"
 	},
 	{
-		"ID": "38",
 		"Name": "Éclair cake",
 		"CategoryID": "7",
 		"Description": "",
@@ -304,7 +266,6 @@
 		"Price": "4.5"
 	},
 	{
-		"ID": "39",
 		"Name": "Fruit salad",
 		"CategoryID": "7",
 		"Description": "Orange, banana, kiwi, apple, whipped cream, topping",

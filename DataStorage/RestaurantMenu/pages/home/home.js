@@ -19,7 +19,99 @@
 	}
 
 	function createDb() {
-		var db = Telerik.Data.Database.open("RestaurantDB");
+		var schema = {
+			tables: [
+			{
+				name: "Categories",
+				columns: [
+				{
+					name: "id",
+					type: "number",
+					autoIncrement: true,
+					identity: true
+				},
+				{
+					name: "categoryName",
+					type: "string",
+					nullable: false
+				}
+				]
+			},
+			{
+				name: "Products",
+				columns: [
+				{
+					name: "id",
+					type: "number",
+					autoIncrement: true,
+					identity: true
+				},
+				{
+					name: "name",
+					type: "string",
+					nullable: false
+				},
+				{
+					name: "categoryId",
+					type: "number"
+				},
+				{
+					name: "description",
+					type: "string"
+				},
+				{
+					name: "quantity",
+					type: "number",
+					nullable: false
+				},
+				{
+					name: "price",
+					type: "number",
+					nullable: false
+				}
+				]
+			},
+			{
+				name: "Orders",
+				columns: [
+				{
+					name: "id",
+					type: "number",
+					autoIncrement: true,
+					identity: true
+				},
+				{
+					name: "tableNo",
+					type: "number",
+					nullable: false
+				}
+				]
+			},
+			{
+				name: "OrderDetails",
+				columns: [
+				{
+					name: "recordId",
+					type: "number",
+					autoIncrement: true,
+					identity: true
+				},
+				{
+					name: "orderId",
+					type: "number",
+					nullable: false
+				},
+				{
+					name: "productId",
+					type: "number",
+					nullable: false
+				}
+				]
+			}
+			]
+		};
+		var db = Telerik.Data.Database.open("RestaurantDB", "local", schema);
+		db.serializeObject = false;
 		var categories,
 		products,
 		orders,
@@ -46,27 +138,23 @@
 		WinJS.Promise.join([cPromise, pPromise, oPromise, odPromise]).done(function () {
 			//use the data read from the files to populate the database
 			for (var i = 0; i < categories.length; i++) {
-				db.insert("Categories", { id: categories[i].CategoryID, categoryName: categories[i].CategoryName });
+				db.insert("Categories", { categoryName: categories[i].CategoryName });
 			}
 
 			for (var i = 0; i < products.length; i++) {
-				db.insert("Products", { id: products[i].ID, name: products[i].Name, categoryId: products[i].CategoryID, description: products[i].Description, quantity: products[i].Quantity, price: products[i].Price });
+				db.insert("Products", { categoryId: products[i].CategoryID, name: products[i].Name, description: products[i].Description, quantity: products[i].Quantity, price: products[i].Price });
 			}
 
 			for (var i = 0; i < orders.length; i++) {
-				db.insert("Orders", { id: parseInt(orders[i].OrderID), tableNo: orders[i].Table });
+				db.insert("Orders", { tableNo: orders[i].Table });
 			}
 
 			for (var i = 0; i < orderDetails.length; i++) {
-				db.insert("OrderDetails", { orderId: parseInt(orderDetails[i].OrderID), productId: orderDetails[i].ProductID });
+				db.insert("OrderDetails", { orderId: orderDetails[i].OrderID, productId: orderDetails[i].ProductID });
 			}
 
 			//data isn't really inserted until the sync method is called
-			db.sync().then(function () {
-				db.close();
-			}, function (e) {
-				//handle any errors from the db insert operations, e.message contains the error message
-			});
+			db.sync();
 		}, function (e) {
 			//handle any errors from the joined read operations, e.message contains the error message
 		});

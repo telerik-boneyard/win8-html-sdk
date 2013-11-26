@@ -1,14 +1,11 @@
 [
 	{
-		"OrderID": "1",
 		"Table": "3"
 	},
 	{
-		"OrderID": "2",
 		"Table": "7"
 	},
 	{
-		"OrderID": "3",
 		"Table": "10"
 	}
 ]
