@@ -1,0 +1,42 @@
+﻿.mainContent {
+	margin: 120px 0 50px 120px;
+}
+
+.info {
+	color: #feef7a;
+	margin: 0 120px;
+}
+
+#drag-container {
+	height: 30px;
+	background: #0A55BD;
+	width: 250px;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 10px;
+	z-index: 1;
+}
+
+.scheduleContainer {
+	width: 90%;
+}
+
+.scheduleContainer #tasksGrid {
+	float: left;
+	margin: 50px 20px 0 0;
+	height: 700px;
+}
+
+.scheduleContainer #tasksScheduler {
+	float: left;
+	width: calc(100% - 270px);
+}
+
+.mainContent:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}

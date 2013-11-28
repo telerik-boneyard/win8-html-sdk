@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>DragDropFromGridToScheduler</title>
+
+	<!-- WinJS references -->
+	<link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+	<script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+	<script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+	<!-- Telerik references -->
+	<link href="///Telerik.UI/css/common.css" rel="stylesheet" />
+	<link href="///Telerik.UI/css/dark.css" rel="stylesheet" />
+	<script src="///Telerik.UI/js/jquery.js"></script>
+	<script src="///Telerik.UI/js/ui.js"></script>
+
+	<!-- DragDropFromGridToScheduler references -->
+	<link href="/css/default.css" rel="stylesheet" />
+	<script src="/js/default.js"></script>
+</head>
+<body>
+	<section class="mainContent">
+		<div class="scheduleContainer">
+			<div id="tasksGrid" style="width: 250px" data-win-control="Telerik.UI.RadGrid" data-win-options="{
+					dataSource: DragEventsExample.tasksDataSource,
+					columns: [
+						{
+							field: 'title'
+						}
+					]
+			     }">
+			</div>
+			<div id="drag-container" style="display: none"></div>
+			<div id="tasksScheduler" style="height: 700px; margin-top: 50px" data-win-control="Telerik.UI.RadScheduler" data-win-options="{
+					dataSource: DragEventsExample.taskEventsDataSource,
+					editable: {
+						enabled: true,
+						create: false,
+						update: false
+					},
+					onremove: DragEventsExample.removeTaskEvent
+				}">
+			</div>
+		</div>
+	</section>
+	<div class="info" data-win-control="WinJS.UI.HtmlControl" data-win-options="{
+		uri: 'readme.html'
+	}">
+	</div>
+</body>
+</html>
