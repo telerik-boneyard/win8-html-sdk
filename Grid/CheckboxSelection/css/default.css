@@ -1,6 +1,14 @@
-﻿body {
-	margin-top:100px;
+﻿.mainContent {
+	margin: 120px;
+	width: 1000px;
 }
+
+.info {
+	color: #feef7a;
+	margin-left: 120px;
+	width: 1000px;
+}
+
 
 .t-expand.t-nw {
 	display: none;
